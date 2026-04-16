@@ -11,6 +11,16 @@
 
 <body class="bg-slate-950 text-slate-100">
 
+    <!-- Scroll indicator: visible when the user can still scroll down -->
+    <div id="scroll-indicator"
+        class="fixed left-1/2 bottom-6 z-30 -translate-x-1/2 flex flex-col items-center text-slate-100 transition-opacity duration-300 opacity-100">
+        <a href="#apropos" class="flex flex-col items-center text-sky-400 hover:text-sky-300">
+            <div class="w-10 h-10 bg-sky-900 rounded-full shadow-2xl flex items-center justify-center animate-bounce">
+                <span class="text-white text-2xl">↓</span>
+            </div>
+        </a>
+    </div>
+
     <!-- Navbar -->
     <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-20">
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -28,21 +38,25 @@
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4">
+    <section id="accueil" class="w-full min-h-screen flex items-center justify-end px-6
+           bg-cover bg-center bg-no-repeat relative overflow-hidden"
+        style="background-image: url('images/im_info.jpg');">
 
-        <!-- Accueil -->
-        <section id="accueil" class="min-h-screen flex flex-col justify-center gap-6">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                OVONO ETOUBEMBE <span class="text-sky-400">Julfab Williarde</span><br />
-                <span class="text-slate-300 text-3xl sm:text-4xl">Développeur Web | Full-stack</span>
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div class="relative max-w-xl flex flex-col gap-6 text-right -translate-x-10">
+            <h1 class="text-4xl sm:text-5xl md:text-5xl font-bold leading-tight">
+                OVONO ETOUBEMBE
+                <span class="text-sky-400">Julfab Williarde</span><br />
+                <span class="text-slate-300 text-2xl sm:text-3xl">Développeur Web | Full-stack</span>
             </h1>
 
-            <p class="text-slate-300 max-w-2xl text-lg">
+            <p class="text-slate-300 text-lg">
                 Étudiant en Licence 2 MIASHS, parcours Informatique à l'Université Toulouse Jean Jaurès.
                 Passionné par le développement back-end, les API et la création d'applications web modernes.
             </p>
 
-            <div class="flex flex-wrap gap-3">
+            <div class="flex flex-wrap gap-3 justify-end">
                 <a href="#projets" class="px-6 py-3 rounded-md bg-sky-500 hover:bg-sky-400 text-sm font-medium">
                     Voir mes projets
                 </a>
@@ -51,44 +65,62 @@
                     Me contacter
                 </a>
             </div>
-        </section>
+        </div>
+
+    </section>
+
+
+    <main class="max-w-5xl mx-auto px-4">
 
         <!-- À propos -->
-        <section id="apropos" class="min-h-screen py-16 border-t border-slate-800 flex items-center justify-center">
-            <div class="text-center max-w-3xl">
-                <h2 class="text-3xl font-semibold mb-6">À propos</h2>
-                <p class="text-slate-300 text-lg mb-4">
+        <section id="apropos"
+            class="min-h-screen py-16 border-t border-slate-800 flex items-center justify-between px-10 gap-12 flex-wrap">
+
+            <div class="max-w-xl flex flex-col gap-6 text-justify">
+                <h2 class="text-3xl font-semibold">À propos</h2>
+                <p class="text-slate-300 text-lg">
                     Actuellement en Licence 2 MIASHS, parcours Informatique à l'Université Toulouse Jean Jaurès, je
                     développe mes compétences en programmation, en algorithmique et en conception d'applications web.
-                    Passionné par le développement full-stack, je m'investis dans l'apprentissage du back-end comme du
-                    front-end afin de construire des solutions fiables, structurées et adaptées aux besoins des
-                    utilisateurs. </p>
+                    Passionné par le développement Full-stack, je m'investis dans l'apprentissage du Back-end comme du
+                    Front-end afin de construire des solutions fiables, structurées et adaptées aux besoins des
+                    utilisateurs.
+                </p>
                 <p class="text-slate-300 text-lg">
-                    J'ai déjà travaillé sur des projets en
-                    <span class="text-sky-400">Python</span>,
-                    <span class="text-sky-400">FastAPI</span>,
-                    <span class="text-sky-400">HTML / CSS / JavaScript</span>
+                    J'ai déjà travaillé sur des projets utilisant
+                    <span class="text-sky-400">Python (FastAPI)</span>,
+                    <span class="text-sky-400">HTML5 / CSS3 / JavaScript</span>
                     et <span class="text-sky-400">MySQL</span>.
-                    Mon objectif est de devenir développeur full-stack polyvalent, en approfondissant mes compétences en
-                    back-end et en renforçant mon expertise front-end, afin de créer des API fiables et de contribuer à
-                    des projets web complets, robustes et bien structurés grâce à mon sens de l'organisation, mon
-                    autonomie et mes compétences techniques.
+                    Parallèlement, je développe mes compétences en
+                    <span class="text-sky-400">Java</span> et en
+                    <span class="text-sky-400">PHP</span>, deux langages sur lesquels je
+                    souhaite particulièrement progresser afin d'approfondir mes connaissances en Back-end. Mon objectif
+                    est de concevoir des API fiables et de contribuer à des projets web complets, robustes et bien
+                    structurés, pour devenir un développeur Full-stack polyvalent, aussi performant en Front-end qu'en
+                    Back-end.
                 </p>
             </div>
+
+            <div class="w-[280px] flex justify-center">
+                <img src="images/Développeur passionné entouré d'icônes Tech.png" alt="Avatar 3D Julfab"
+                    class="w-full h-auto object-contain">
+            </div>
+
         </section>
 
-        <!-- Projets -->
         <section id="projets" class="min-h-screen py-16 border-t border-slate-800">
             <h2 class="text-3xl font-semibold mb-10">Projets</h2>
 
             <div class="grid md:grid-cols-2 gap-8 ">
 
                 <!-- Projet 1 -->
-                <article class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card">
-                    <img src="images/Capture d'écran 2026-02-13 113141.png" class="rounded-md mb-4 hover:scale-105 transition" alt="Projet FastAPI">
+                <article
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
+                    <img src="images/Capture d'écran 2026-02-13 113141.png" class="rounded-md mb-4 transition"
+                        alt="Projet FastAPI">
                     <h3 class="text-xl font-semibold mb-2">API REST en FastAPI</h3>
 
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <div
+                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             Ce projet consiste en la création d'une API REST complète permettant de gérer un ensemble de
                             Pokémon à partir d'un fichier JSON. J'y ai mis en place une architecture structurée avec des
@@ -114,18 +146,22 @@
                 </article>
 
                 <!-- Projet 2 -->
-                <article class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card">
-                    <img src="images/checklist-app.png" class="rounded-md mb-4 hover:scale-105 transition" alt="Checklist App">
+                <article
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
+                    <img src="images/checklist-app.png" class="rounded-md mb-4 transition" alt="Checklist App">
                     <h3 class="text-xl font-semibold mb-2">Application web : Checklist</h3>
 
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <div
+                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
-                            Application web de gestion de checklists et de tâches, développée en JavaScript avec
-                            stockage
-                            local et interface responsive en TailwindCSS. L'utilisateur peut créer des listes, ajouter
-                            des
-                            tâches associées et naviguer entre les pages grâce à un rendu dynamique et une manipulation
-                            efficace du DOM
+                            Application web de gestion de checklists développée en HTML, CSS (Tailwind) et JavaScript.
+                            Elle permet de créer, organiser et suivre des listes de tâches directement dans le
+                            navigateur grâce au stockage local (localStorage). L’interface propose l’ajout de checklists
+                            avec titre, description et date d’échéance, ainsi que des fonctionnalités de recherche,
+                            filtrage (favoris, importantes, terminées) et modification via des modales. Chaque checklist
+                            possède sa propre page dédiée aux tâches, avec un système de statut et de progression. Le
+                            projet met en pratique la structuration d’une application front-end, la manipulation du DOM,
+                            la gestion de données locales et l’organisation du code en plusieurs scripts.
                         </p>
                         <p class="text-xs text-slate-400 mb-3">
                             <span class="font-semibold text-slate-200">Technologies :</span> HTML, TailwindCSS,
@@ -138,11 +174,13 @@
                     </div>
                 </article>
                 <!-- Projet 3 -->
-                <article class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card">
-                    <img src="images/joelle-coutaz.jpg" class="rounded-md mb-4 hover:scale-105 transition" alt="Joëlle COUTAZ">
+                <article
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
+                    <img src="images/Scientifique cartoon.png" class="rounded-md mb-4 transition" alt="Joëlle COUTAZ">
                     <h3 class="text-xl font-semibold mb-2">Mini-site pédagogique : Joëlle COUTAZ</h3>
 
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <div
+                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             Ce projet consistait à créer un site web complet et responsive présentant la vie, les
                             travaux et
@@ -163,35 +201,13 @@
                     </div>
                 </article>
                 <!-- Projet 4 -->
-                <article class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card">
-                    <img src="images/jowe.png" class="rounded-md mb-4 hover:scale-105 transition" alt="JOWE">
-                    <h3 class="text-xl font-semibold mb-2">Site vitrine fictif : JOWE (mode & boutique)</h3>
-
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
-                        <p class="mb-3">
-                            Ce projet est un site vitrine de mode composé de six pages, réalisé en HTML, CSS et
-                            TailwindCSS.
-                            Il présente une boutique éphémère regroupant plusieurs marques et inclut des pages produits,
-                            équipe, contact et formulaires. C'était un projet surtout esthétique, qui reflète mes
-                            premières
-                            expérimentations en intégration web et ma progression depuis mes débuts.
-
-                        </p>
-                        <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML, CSS, TailwindCSS
-                        </p>
-                        <div class="flex gap-3 text-sm">
-                            <a href="https://williardet.github.io/Projet-JOWE/" target="_blank"
-                                class="text-sky-400 hover:underline">Voir le site</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- Projet 5 -->
-                <article class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card">
-                    <img src="images/travel.png" class="rounded-md mb-4 hover:scale-105 transition" alt="Air Travel">
+                <article
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
+                    <img src="images/Page d'accueil Air T.png" class="rounded-md mb-4 transition" alt="Air Travel">
                     <h3 class="text-xl font-semibold mb-2">Page web : Air Travel (agence de voyage)</h3>
 
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <div
+                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             Présentation de destinations touristiques dans un format vitrine simple et clair. Projet axé
                             sur
@@ -207,11 +223,13 @@
                     </div>
                 </article>
                 <!-- Projet 6 -->
-                <article class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card">
-                    <img src="images/SQGM.png" class="rounded-md mb-4 hover:scale-105 transition" alt="Squid Game">
+                <article
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
+                    <img src="images/SQGM.png" class="rounded-md mb-4 transition" alt="Squid Game">
                     <h3 class="text-xl font-semibold mb-2">Page web : Squid Game (bande-annonce)</h3>
 
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <div
+                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             Page web dédiée à la bande-annonce de la série Squid Game, avec mise en valeur visuelle et
                             structure narrative.
@@ -225,12 +243,14 @@
                         </div>
                     </div>
                 </article>
-                <!-- Projet 7 -->
-                <article class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card">
-                    <img src="images/Livret.png" class="rounded-md mb-4 hover:scale-105 transition" alt="Collection">
+                <!-- Projet 6 -->
+                <article
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
+                    <img src="images/Livret.png" class="rounded-md mb-4 transition" alt="Collection">
                     <h3 class="text-xl font-semibold mb-2">Page web : Collection de livres de l'auteur Austin</h3>
 
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <div
+                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             Présentation d'une collection fictive de livres, avec mise en page soignée et
                             hiérarchisation
@@ -249,104 +269,207 @@
             </div>
         </section>
 
-        <!-- Compétences -->
         <section id="competences" class="min-h-screen py-16 border-t border-slate-800">
             <h2 class="text-3xl font-semibold mb-10">Compétences</h2>
 
             <div class="grid md:grid-cols-3 gap-6 text-lg">
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
                     <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-5" />
-                        Langages & Bases de données
+                        Back-end & Bases de données
                     </h3>
                     <ul class="space-y-1 text-slate-300">
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>SQL (MySQL / MariaDB)</li>
+                        <li class="flex items-center gap-2">
+                            <img src="images/python.png" class="w-4" />
+                            Python
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="images/java.png" class="w-4" />
+                            Java
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" class="w-4" />
+                            PHP
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" class="w-4" />
+                            SQL (MySQL / MariaDB)
+                        </li>
                     </ul>
                 </div>
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
                     <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-5" />
                         Front-end
                     </h3>
                     <ul class="space-y-1 text-slate-300">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Tailwind CSS</li>
-                        <li>Interfaces responsives</li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" class="w-4 h-4"
+                                alt="HTML5 icon" />
+                            HTML5
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="w-4 h-4"
+                                alt="CSS3 icon" />
+                            CSS3 (TailwindCSS)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="w-4 h-4"
+                                alt="JavaScript icon" />
+                            JavaScript (React)
+                        </li>
                     </ul>
                 </div>
-
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40">
-                    <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" class="w-5" />
-                        Back-end
-                    </h3>
-                    <ul class="space-y-1 text-slate-300">
-                        <li>Django</li>
-                        <li>Node.js</li>
-                    </ul>
-                </div>
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
                     <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="w-5" />
-                        Frameworks & Bibliothèques
+                        Frameworks
                     </h3>
                     <ul class="space-y-1 text-slate-300">
-                        <li>React</li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/document.png" class="w-4 h-4" alt="vue.js icon" />
+                            Vue.js
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                                class="w-4 h-4" alt="Django icon" />
+                            Django
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/laravel-original.svg" class="w-4 h-4" alt="Laravel icon" />
+                            Laravel
+                        </li>
+
                     </ul>
                 </div>
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
                     <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" class="w-5" />
                         Outils
                     </h3>
                     <ul class="space-y-1 text-slate-300">
-                        <li>Git / GitHub</li>
-                        <li>VS Code</li>
-                        <li>Figma</li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                class="w-4 h-4" alt="Git icon" />
+                            Git / GitHub
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                class="w-4 h-4" alt="VS Code icon" />
+                            VS Code
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                class="w-4 h-4" alt="Figma icon" />
+                            Figma
+                        </li>
+
                     </ul>
                 </div>
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
                     <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-5" />
                         Compétences transversales
                     </h3>
                     <ul class="space-y-1 text-slate-300">
-                        <li>Travail en équipe</li>
-                        <li>Communication</li>
-                        <li>Organisation & autonomie</li>
-                        <li>Adaptabilité</li>
-                        <li>Créativité</li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1041/1041373.png" class="w-4 h-4"
+                                alt="Travail en équipe icon" />
+                            Travail en équipe
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/agile-methodology.png" class="w-4 h-4"
+                                alt="Intérêt pour les méthodes Agile" />
+                            Intérêt pour les méthodes Agile
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/business-chart.png" class="w-4 h-4" alt="Organisation autonomie icon" />
+                            Organisation & autonomie
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/adaptation.png" class="w-4 h-4" alt="Adaptabilité icon" />
+                            Adaptabilité
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/creative-process.png" class="w-4 h-4" alt="Créativité icon" />
+                            Créativité
+                        </li>
+
                     </ul>
                 </div>
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
                     <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/1975/1975643.png" class="w-5" />
                         Langues
                     </h3>
                     <ul class="space-y-1 text-slate-300">
-                        <li>Français : langue maternelle</li>
-                        <li>Anglais : B1</li>
-                        <li>Mandarin : débutant</li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" class="w-4 h-4"
+                                alt="Français icon" />
+                            Français : langue maternelle
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" class="w-4 h-4"
+                                alt="Anglais icon" />
+                            Anglais : B1
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/197/197375.png" class="w-4 h-4"
+                                alt="Mandarin icon" />
+                            Mandarin : débutant
+                        </li>
+
                     </ul>
                 </div>
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out">
                     <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="w-5" />
                         Centres d'intérêt
                     </h3>
                     <ul class="space-y-1 text-slate-300">
-                        <li>Sports collectifs</li>
-                        <li>Randonnée en montagne</li>
-                        <li>Culture et loisirs artistiques</li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/soccer-ball-variant.png" class="w-4 h-4" alt="Football icon" />
+                            Sports collectifs
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/mountaineer.png" class="w-4 h-4" alt="Randonnée montagne icon" />
+                            Randonnée en montagne
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <img src="images/pallete.png" class="w-4 h-4" alt="Palette peinture icon" />
+                            Culture et loisirs artistiques
+                        </li>
+
                     </ul>
                 </div>
 
@@ -359,7 +482,8 @@
             <div class="space-y-10">
 
                 <!-- Workshop -->
-                <div class="border border-slate-800 rounded-lg p-6 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -401,7 +525,8 @@
                 </div>
 
                 <!-- Employé Logistique -->
-                <div class="border border-slate-800 rounded-lg p-6 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -422,7 +547,8 @@
                 </div>
 
                 <!-- Engagement associatif -->
-                <div class="border border-slate-800 rounded-lg p-6 bg-slate-900/40">
+                <div
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -496,6 +622,27 @@
     </footer>
 
     <script>
+        const scrollIndicator = document.getElementById('scroll-indicator');
+
+        function updateScrollIndicator() {
+            const scrollBottom = window.scrollY + window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+            const nearBottom = Math.abs(docHeight - scrollBottom) <= 20 || scrollBottom >= docHeight;
+            if (nearBottom) {
+                scrollIndicator.classList.add('opacity-0');
+                scrollIndicator.classList.add('pointer-events-none');
+                scrollIndicator.classList.add('hidden');
+            } else {
+                scrollIndicator.classList.remove('hidden');
+                scrollIndicator.classList.remove('opacity-0');
+                scrollIndicator.classList.remove('pointer-events-none');
+            }
+        }
+
+        window.addEventListener('scroll', updateScrollIndicator);
+        window.addEventListener('resize', updateScrollIndicator);
+        updateScrollIndicator();
+
         // Animation ouverture/fermeture des descriptions de projets
         document.querySelectorAll(".project-card").forEach(card => {
             card.addEventListener("click", () => {
