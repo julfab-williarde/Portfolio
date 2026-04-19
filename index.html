@@ -7,11 +7,11 @@
     <title>Portfolio - OVONO ETOUBEMBE Julfab Williarde</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="celtic-knot.png" type="icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-slate-950 text-slate-100">
+<body class="text-slate-100">
 
-    <!-- Scroll indicator: visible when the user can still scroll down -->
     <div id="scroll-indicator"
         class="fixed left-1/2 bottom-6 z-30 -translate-x-1/2 flex flex-col items-center text-slate-100 transition-opacity duration-300 opacity-100">
         <a href="#apropos" class="flex flex-col items-center text-sky-400 hover:text-sky-300">
@@ -21,7 +21,6 @@
         </a>
     </div>
 
-    <!-- Navbar -->
     <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-20">
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="font-semibold tracking-tight">
@@ -71,8 +70,8 @@
 
 
     <main class="max-w-5xl mx-auto px-4">
+        <div id="stars-container"></div>
 
-        <!-- À propos -->
         <section id="apropos"
             class="min-h-screen py-16 border-t border-slate-800 flex items-center justify-between px-10 gap-12 flex-wrap">
 
@@ -112,7 +111,6 @@
 
             <div class="grid md:grid-cols-2 gap-8 ">
 
-                <!-- Projet 1 -->
                 <article
                     class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
                     <img src="images/Capture d'écran 2026-02-13 113141.png" class="rounded-md mb-4 transition"
@@ -122,20 +120,23 @@
                     <div
                         class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
-                            Ce projet consiste en la création d'une API REST complète permettant de gérer un ensemble de
-                            Pokémon à partir d'un fichier JSON. J'y ai mis en place une architecture structurée avec des
-                            endpoints CRUD, une gestion propre des ressources et une modélisation des données via une
-                            dataclass dédiée. L'API intègre également un système de filtrage avancé (types, évolution,
-                            statistiques, tri dynamique), ainsi qu'une validation stricte des données grâce à FastAPI et
-                            Pydantic. J'ai aussi développé une gestion centralisée des erreurs pour garantir des
-                            réponses
-                            cohérentes et fiables. Enfin, la documentation automatique générée par FastAPI (Swagger UI /
-                            ReDoc) rend l'API intuitive, testable et facile à explorer.
-
+                            API REST complète permettant de gérer un ensemble de Pokémon à partir d'un fichier JSON.
+                            Le projet repose sur une architecture structurée avec endpoints CRUD, filtrage avancé
+                            et validation stricte des données grâce à FastAPI et Pydantic.
                         </p>
+
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                            <li>Endpoints CRUD complets.</li>
+                            <li>Filtrage avancé : types, évolution, statistiques, tri.</li>
+                            <li>Validation des données avec Pydantic.</li>
+                            <li>Gestion centralisée des erreurs.</li>
+                            <li>Documentation automatique (Swagger UI / ReDoc).</li>
+                        </ul>
+
                         <p class="text-xs text-slate-400 mb-3">
                             <span class="font-semibold text-slate-200">Technologies :</span> Python, FastAPI, JSON
                         </p>
+
                         <div class="flex gap-3 text-sm">
                             <a href="https://github.com/williardet/Projet-API-Pokemons" target="_blank"
                                 class="text-sky-400 hover:underline">Code source</a>
@@ -145,35 +146,43 @@
                     </div>
                 </article>
 
-                <!-- Projet 2 -->
                 <article
                     class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
                     <img src="images/checklist-app.png" class="rounded-md mb-4 transition" alt="Checklist App">
-                    <h3 class="text-xl font-semibold mb-2">Application web : Checklist</h3>
+                    <h3 class="text-xl font-semibold mb-2">Application web : TaskMaster</h3>
 
                     <div
                         class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
-                            Application web de gestion de checklists développée en HTML, CSS (Tailwind) et JavaScript.
-                            Elle permet de créer, organiser et suivre des listes de tâches directement dans le
-                            navigateur grâce au stockage local (localStorage). L’interface propose l’ajout de checklists
-                            avec titre, description et date d’échéance, ainsi que des fonctionnalités de recherche,
-                            filtrage (favoris, importantes, terminées) et modification via des modales. Chaque checklist
-                            possède sa propre page dédiée aux tâches, avec un système de statut et de progression. Le
-                            projet met en pratique la structuration d’une application front-end, la manipulation du DOM,
-                            la gestion de données locales et l’organisation du code en plusieurs scripts.
+                            TaskMaster est une application web de gestion de tâches offrant une expérience fluide et
+                            organisée.
+                            Développée en JavaScript Vanilla avec une architecture modulaire, elle met en avant ma
+                            capacité à
+                            créer une interface dynamique sans framework.
                         </p>
+
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                            <li>Gestion complète : création, édition, suppression, sous-tâches et progression.</li>
+                            <li>Organisation avancée : catégories personnalisables et niveaux de priorité.</li>
+                            <li>Vues multiples : liste classique + calendrier.</li>
+                            <li>Filtres intelligents : Aujourd'hui, Important, En retard, recherche, statut, priorité.
+                            </li>
+                            <li>UX moderne : drag & drop, mode sombre, notifications, modales.</li>
+                            <li>Corbeille : restauration ou suppression définitive.</li>
+                        </ul>
+
                         <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML, TailwindCSS,
-                            JavaScript
+                            <span class="font-semibold text-slate-200">Stack :</span> JavaScript ES6+, TailwindCSS,
+                            localStorage
                         </p>
+
                         <div class="flex gap-3 text-sm">
                             <a href="https://williardet.github.io/Projet-checklist/" target="_blank"
                                 class="text-sky-400 hover:underline">Voir le site</a>
                         </div>
                     </div>
                 </article>
-                <!-- Projet 3 -->
+
                 <article
                     class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
                     <img src="images/Scientifique cartoon.png" class="rounded-md mb-4 transition" alt="Joëlle COUTAZ">
@@ -182,25 +191,30 @@
                     <div
                         class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
-                            Ce projet consistait à créer un site web complet et responsive présentant la vie, les
-                            travaux et
-                            l'impact de Joëlle Coutaz. J'ai structuré l'application en plusieurs pages (portrait,
-                            réalisations, quiz), conçu l'interface en HTML/CSS, ajouté un quiz dynamique en JavaScript
-                            et
-                            assuré une navigation fluide sur tous les écrans. Le projet m'a permis de renforcer mes
-                            compétences en intégration web, en organisation du code et en gestion de version avec
-                            Git/GitHub.
+                            Projet éducatif dédié à Joëlle Coutaz, pionnière de l'Interaction Homme-Machine.
+                            Le site propose une navigation fluide permettant de découvrir sa biographie, ses travaux
+                            (dont le modèle PAC) et un module de quiz interactif.
                         </p>
+
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                            <li>Biographie illustrée et présentation de ses contributions.</li>
+                            <li>Quiz dynamique alimenté par un fichier JSON (Fetch API).</li>
+                            <li>Navigation responsive avec menu burger.</li>
+                            <li>Design moderne basé sur CSS Grid, Flexbox et variables CSS.</li>
+                            <li>JavaScript Vanilla pour une logique claire et performante.</li>
+                        </ul>
+
                         <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML, CSS, JavaScript
+                            <span class="font-semibold text-slate-200">Technologies :</span> HTML5, CSS3, JavaScript
                         </p>
+
                         <div class="flex gap-3 text-sm">
                             <a href="https://williardet.github.io/projet-coutaz/" target="_blank"
                                 class="text-sky-400 hover:underline">Voir le site</a>
                         </div>
                     </div>
                 </article>
-                <!-- Projet 4 -->
+
                 <article
                     class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
                     <img src="images/Page d'accueil Air T.png" class="rounded-md mb-4 transition" alt="Air Travel">
@@ -209,58 +223,60 @@
                     <div
                         class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
-                            Présentation de destinations touristiques dans un format vitrine simple et clair. Projet axé
-                            sur
-                            la mise en page et l'organisation du contenu.
+                            T-Air-Travel est une plateforme web immersive conçue pour une agence de voyage moderne.
+                            Le site propose un catalogue de destinations internationales, des fiches détaillées,
+                            un système de réservation dynamique et un formulaire de contact avec validation en temps
+                            réel.
                         </p>
+
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                            <li>Catalogue de destinations avec fiches détaillées.</li>
+                            <li>Système de réservation dynamique.</li>
+                            <li>Formulaire de contact avec validation JavaScript.</li>
+                            <li>Design sombre et animations CSS3 avancées.</li>
+                            <li>Interface full-responsive (Flexbox & CSS Grid).</li>
+                        </ul>
+
                         <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML, CSS
+                            <span class="font-semibold text-slate-200">Technologies :</span> HTML5, CSS3, JavaScript
                         </p>
+
                         <div class="flex gap-3 text-sm">
                             <a href="https://williardet.github.io/Projet-travels/" target="_blank"
                                 class="text-sky-400 hover:underline">Voir le site</a>
                         </div>
                     </div>
                 </article>
-                <!-- Projet 6 -->
+
                 <article
                     class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
                     <img src="images/SQGM.png" class="rounded-md mb-4 transition" alt="Squid Game">
-                    <h3 class="text-xl font-semibold mb-2">Page web : Squid Game (bande-annonce)</h3>
+                    <h3 class="text-xl font-semibold mb-2">Page web : Squid Game catalogue</h3>
 
                     <div
                         class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
                         <p class="mb-3">
-                            Page web dédiée à la bande-annonce de la série Squid Game, avec mise en valeur visuelle et
-                            structure narrative.
+                            Projet inspiré de l'univers de Squid Game, conçu comme une vitrine interactive démontrant
+                            une maîtrise avancée
+                            du JavaScript Vanilla. L'expérience repose sur une navigation horizontale fluide et
+                            immersive, pensée comme
+                            une mise en scène cinématographique.
                         </p>
+
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                            <li>Navigation horizontale hybride (Scroll Snap + scrollTo).</li>
+                            <li>Interactivité multi-plateforme : clavier, AZERTY, gestes tactiles.</li>
+                            <li>UI/UX dynamique : animations avancées, effets blur, notifications custom.</li>
+                            <li>Interface responsive mobile-first (Grid & Flexbox).</li>
+                            <li>Performances optimisées grâce au debounce.</li>
+                        </ul>
+
                         <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML, CSS
+                            <span class="font-semibold text-slate-200">Technologies :</span> HTML5, CSS3, JavaScript
                         </p>
+
                         <div class="flex gap-3 text-sm">
                             <a href="https://williardet.github.io/Projet-Squid-game/" target="_blank"
-                                class="text-sky-400 hover:underline">Voir le site</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- Projet 6 -->
-                <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
-                    <img src="images/Livret.png" class="rounded-md mb-4 transition" alt="Collection">
-                    <h3 class="text-xl font-semibold mb-2">Page web : Collection de livres de l'auteur Austin</h3>
-
-                    <div
-                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
-                        <p class="mb-3">
-                            Présentation d'une collection fictive de livres, avec mise en page soignée et
-                            hiérarchisation
-                            des informations.
-                        </p>
-                        <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML, CSS
-                        </p>
-                        <div class="flex gap-3 text-sm">
-                            <a href="https://williardet.github.io/Projet-Austin/" target="_blank"
                                 class="text-sky-400 hover:underline">Voir le site</a>
                         </div>
                     </div>
@@ -570,14 +586,15 @@
             </div>
         </section>
 
-        <section id="contact" class="min-h-screen py-16 border-t border-slate-800 flex flex-col justify-center">
+        <section id="contact"
+            class="text-center min-h-screen py-16 border-t border-slate-800 flex flex-col justify-center">
             <h2 class="text-3xl font-semibold mb-10">Contact</h2>
 
             <p class="text-slate-300 mb-6 text-lg">
                 Disponible pour une alternance en développement web / Full-stack à partir de 2026-2027.
             </p>
 
-            <div class="space-y-4 text-lg">
+            <div class="space-y-4 text-lg mx-auto flex flex-col items-center text-center">
 
                 <p class="flex items-center gap-3">
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-6" />
@@ -610,9 +627,8 @@
                     </a>
                 </p>
 
-
-
             </div>
+
         </section>
 
     </main>
@@ -622,6 +638,24 @@
     </footer>
 
     <script>
+        const container = document.getElementById('stars-container');
+        const starCount = 200;
+        const colors = ['#ffffff', '#e0f7ff', '#fff4e0'];
+
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = (Math.random() * 2 + 1) + 'px';
+            star.style.width = size;
+            star.style.height = size;
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            star.style.setProperty('--duration', (Math.random() * 10 + 0.6) + 's');
+            star.style.animationDelay = Math.random() * 10 + 's';
+            container.appendChild(star);
+        }
+
         const scrollIndicator = document.getElementById('scroll-indicator');
 
         function updateScrollIndicator() {
