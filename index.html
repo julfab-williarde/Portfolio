@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - OVONO ETOUBEMBE Julfab Williarde</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="celtic-knot.png" type="icon">
+    <link rel="icon" href="celtic-knot.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body class="text-slate-100">
 
+    <div id="stars-container"></div>
+
     <div id="scroll-indicator"
         class="fixed left-1/2 bottom-6 z-30 -translate-x-1/2 flex flex-col items-center text-slate-100 transition-opacity duration-300 opacity-100">
-        <a href="#apropos" class="flex flex-col items-center text-sky-400 hover:text-sky-300">
+        <a href="#apropos" class="flex flex-col items-center text-sky-400 hover:text-sky-300"
+            aria-label="Défiler vers la section À propos">
             <div class="w-10 h-10 bg-sky-900 rounded-full shadow-2xl flex items-center justify-center animate-bounce">
                 <span class="text-white text-2xl">↓</span>
             </div>
@@ -26,19 +30,40 @@
             <div class="font-semibold tracking-tight">
                 <a href="#accueil" class="text-sky-400">Julfab</a> · Développeur Web / Full-stack
             </div>
-            <nav class="hidden sm:flex gap-6 text-sm">
+
+            <!-- Bouton Menu Mobile -->
+            <button id="menu-toggle" class="md:hidden text-slate-100 hover:text-sky-400 focus:outline-none"
+                aria-label="Ouvrir le menu">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <nav class="hidden md:flex gap-6 text-sm">
                 <a href="#apropos" class="hover:text-sky-400">À propos</a>
                 <a href="#projets" class="hover:text-sky-400">Projets</a>
                 <a href="#competences" class="hover:text-sky-400">Compétences</a>
                 <a href="#experience" class="hover:text-sky-400">Expériences</a>
                 <a href="#contact" class="hover:text-sky-400">Contact</a>
+            </nav>
+        </div>
 
+        <!-- Menu Mobile Déroulant -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-950/95 border-b border-slate-800"
+            aria-label="Menu mobile">
+            <nav class="flex flex-col items-center gap-6 py-8 text-lg">
+                <a href="#apropos" class="mobile-nav-link w-full text-center hover:text-sky-400">À propos</a>
+                <a href="#projets" class="mobile-nav-link w-full text-center hover:text-sky-400">Projets</a>
+                <a href="#competences" class="mobile-nav-link w-full text-center hover:text-sky-400">Compétences</a>
+                <a href="#experience" class="mobile-nav-link w-full text-center hover:text-sky-400">Expériences</a>
+                <a href="#contact" class="mobile-nav-link w-full text-center hover:text-sky-400">Contact</a>
             </nav>
         </div>
     </header>
 
     <section id="accueil" class="w-full min-h-screen flex items-center justify-end px-6
-           bg-cover bg-center bg-no-repeat relative overflow-hidden"
+               bg-cover bg-center bg-no-repeat relative overflow-hidden"
         style="background-image: url('images/im_info.jpg');">
 
         <div class="absolute inset-0 bg-black/40"></div>
@@ -56,11 +81,12 @@
             </p>
 
             <div class="flex flex-wrap gap-3 justify-end">
-                <a href="#projets" class="px-6 py-3 rounded-md bg-sky-500 hover:bg-sky-400 text-sm font-medium">
+                <a href="#projets"
+                    class="px-6 py-3 rounded-md bg-sky-500 hover:bg-sky-400 text-sm font-medium transition-colors">
                     Voir mes projets
                 </a>
                 <a href="#contact"
-                    class="px-6 py-3 rounded-md border border-slate-700 hover:border-sky-400 text-sm font-medium">
+                    class="px-6 py-3 rounded-md border border-slate-700 hover:border-sky-400 text-sm font-medium transition-colors">
                     Me contacter
                 </a>
             </div>
@@ -68,14 +94,12 @@
 
     </section>
 
-
     <main class="max-w-5xl mx-auto px-4">
-        <div id="stars-container"></div>
 
         <section id="apropos"
-            class="min-h-screen py-16 border-t border-slate-800 flex items-center justify-between px-10 gap-12 flex-wrap">
+            class="min-h-screen py-16 flex items-center justify-center md:justify-between px-10 gap-12 flex-wrap">
 
-            <div class="max-w-xl flex flex-col gap-6 text-justify">
+            <div class="max-w-xl flex flex-col gap-6 items-center md:items-start text-justify">
                 <h2 class="text-3xl font-semibold">À propos</h2>
                 <p class="text-slate-300 text-lg">
                     Actuellement en Licence 2 MIASHS, parcours Informatique à l'Université Toulouse Jean Jaurès, je
@@ -112,13 +136,16 @@
             <div class="grid md:grid-cols-2 gap-8 ">
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
-                    <img src="images/Capture d'écran 2026-02-13 113141.png" class="rounded-md mb-4 transition"
-                        alt="Projet FastAPI">
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
+                    tabindex="0" aria-expanded="false">
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <img src="images/Capture d'écran 2026-02-13 113141.png"
+                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                            alt="Projet FastAPI">
+                    </div>
                     <h3 class="text-xl font-semibold mb-2">API REST en FastAPI</h3>
-
-                    <div
-                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
+                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             API REST complète permettant de gérer un ensemble de Pokémon à partir d'un fichier JSON.
                             Le projet repose sur une architecture structurée avec endpoints CRUD, filtrage avancé
@@ -147,12 +174,16 @@
                 </article>
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
-                    <img src="images/checklist-app.png" class="rounded-md mb-4 transition" alt="Checklist App">
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
+                    tabindex="0" aria-expanded="false">
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <img src="images/checklist-app.png"
+                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                            alt="Checklist App">
+                    </div>
                     <h3 class="text-xl font-semibold mb-2">Application web : TaskMaster</h3>
-
-                    <div
-                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
+                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             TaskMaster est une application web de gestion de tâches offrant une expérience fluide et
                             organisée.
@@ -184,12 +215,16 @@
                 </article>
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
-                    <img src="images/Scientifique cartoon.png" class="rounded-md mb-4 transition" alt="Joëlle COUTAZ">
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
+                    tabindex="0" aria-expanded="false">
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <img src="images/Scientifique cartoon.png"
+                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                            alt="Joëlle COUTAZ">
+                    </div>
                     <h3 class="text-xl font-semibold mb-2">Mini-site pédagogique : Joëlle COUTAZ</h3>
-
-                    <div
-                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
+                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             Projet éducatif dédié à Joëlle Coutaz, pionnière de l'Interaction Homme-Machine.
                             Le site propose une navigation fluide permettant de découvrir sa biographie, ses travaux
@@ -216,12 +251,16 @@
                 </article>
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
-                    <img src="images/Page d'accueil Air T.png" class="rounded-md mb-4 transition" alt="Air Travel">
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
+                    tabindex="0" aria-expanded="false">
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <img src="images/Page d'accueil Air T.png"
+                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                            alt="Air Travel">
+                    </div>
                     <h3 class="text-xl font-semibold mb-2">Page web : Air Travel (agence de voyage)</h3>
-
-                    <div
-                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
+                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             T-Air-Travel est une plateforme web immersive conçue pour une agence de voyage moderne.
                             Le site propose un catalogue de destinations internationales, des fiches détaillées,
@@ -249,12 +288,16 @@
                 </article>
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition">
-                    <img src="images/SQGM.png" class="rounded-md mb-4 transition" alt="Squid Game">
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
+                    tabindex="0" aria-expanded="false">
+                    <div class="overflow-hidden rounded-md mb-4">
+                        <img src="images/SQGM.png"
+                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                            alt="Squid Game">
+                    </div>
                     <h3 class="text-xl font-semibold mb-2">Page web : Squid Game catalogue</h3>
-
-                    <div
-                        class="project-description hidden opacity-0 group-hover:block group-hover:opacity-100 transition-opacity duration-200 text-slate-300 text-sm mt-3">
+                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-sm mt-3">
                         <p class="mb-3">
                             Projet inspiré de l'univers de Squid Game, conçu comme une vitrine interactive démontrant
                             une maîtrise avancée
@@ -546,12 +589,12 @@
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
-                            Employé Logistique - Emploi étudiant | Rentréediscount
+                            Employé Logistique - Emploi étudiant | RentréeDiscount
                         </h3>
                     </div>
 
                     <p class="text-sm text-slate-400 mb-3">
-                        Été 2025 · Toulouse
+                        Été 2024 · Toulouse
                     </p>
 
                     <ul class="list-disc list-inside text-slate-300 space-y-1">
@@ -636,55 +679,6 @@
     <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500 mt-8">
         © 2026 - OVONO ETOUBEMBE Julfab Williarde · Portfolio Développeur Web / Full-stack
     </footer>
-
-    <script>
-        const container = document.getElementById('stars-container');
-        const starCount = 200;
-        const colors = ['#ffffff', '#e0f7ff', '#fff4e0'];
-
-        for (let i = 0; i < starCount; i++) {
-            const star = document.createElement('div');
-            star.className = 'star';
-            const size = (Math.random() * 2 + 1) + 'px';
-            star.style.width = size;
-            star.style.height = size;
-            star.style.left = Math.random() * 100 + '%';
-            star.style.top = Math.random() * 100 + '%';
-            star.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-            star.style.setProperty('--duration', (Math.random() * 10 + 0.6) + 's');
-            star.style.animationDelay = Math.random() * 10 + 's';
-            container.appendChild(star);
-        }
-
-        const scrollIndicator = document.getElementById('scroll-indicator');
-
-        function updateScrollIndicator() {
-            const scrollBottom = window.scrollY + window.innerHeight;
-            const docHeight = document.documentElement.scrollHeight;
-            const nearBottom = Math.abs(docHeight - scrollBottom) <= 20 || scrollBottom >= docHeight;
-            if (nearBottom) {
-                scrollIndicator.classList.add('opacity-0');
-                scrollIndicator.classList.add('pointer-events-none');
-                scrollIndicator.classList.add('hidden');
-            } else {
-                scrollIndicator.classList.remove('hidden');
-                scrollIndicator.classList.remove('opacity-0');
-                scrollIndicator.classList.remove('pointer-events-none');
-            }
-        }
-
-        window.addEventListener('scroll', updateScrollIndicator);
-        window.addEventListener('resize', updateScrollIndicator);
-        updateScrollIndicator();
-
-        // Animation ouverture/fermeture des descriptions de projets
-        document.querySelectorAll(".project-card").forEach(card => {
-            card.addEventListener("click", () => {
-                const desc = card.querySelector(".project-description");
-                desc.classList.toggle("hidden");
-            });
-        });
-    </script>
 
 </body>
 
