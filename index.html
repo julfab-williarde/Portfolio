@@ -27,7 +27,7 @@
 
     <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-20">
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="font-semibold tracking-tight">
+            <div class="font-semibold tracking-tight text-lg">
                 <a href="#accueil" class="text-sky-400">Julfab</a> · Développeur Web / Full-stack
             </div>
 
@@ -40,7 +40,7 @@
                 </svg>
             </button>
 
-            <nav class="hidden md:flex gap-6 text-sm">
+            <nav class="hidden md:flex gap-6 text-lg">
                 <a href="#apropos" class="hover:text-sky-400">À propos</a>
                 <a href="#projets" class="hover:text-sky-400">Projets</a>
                 <a href="#competences" class="hover:text-sky-400">Compétences</a>
@@ -100,7 +100,7 @@
             class="min-h-screen py-16 flex items-center justify-center md:justify-between px-10 gap-12 flex-wrap">
 
             <div class="max-w-xl mx-auto flex flex-col gap-6 items-center md:items-start text-justify">
-                <h2 class="text-3xl font-semibold">À propos</h2>
+                <h2 class="text-5xl font-bold text-sky-400">À propos</h2>
                 <p class="text-slate-300 text-lg">
                     Actuellement en Licence 2 MIASHS, parcours Informatique à l'Université Toulouse Jean Jaurès, je
                     développe mes compétences en programmation, en algorithmique et en conception d'applications web.
@@ -131,7 +131,7 @@
         </section>
 
         <section id="projets" class="min-h-screen py-16 border-t border-slate-800">
-            <h2 class="text-3xl font-semibold mb-10">Projets</h2>
+            <h2 class="text-5xl font-bold mb-10 text-sky-400">Projets</h2>
 
             <div class="grid md:grid-cols-2 gap-8 ">
 
@@ -144,15 +144,15 @@
                             alt="Projet FastAPI">
                     </div>
                     <h3 class="text-xl font-semibold mb-2">API REST en FastAPI</h3>
-                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-base mt-3">
                         <p class="mb-3">
                             API REST complète permettant de gérer un ensemble de Pokémon à partir d'un fichier JSON.
                             Le projet repose sur une architecture structurée avec endpoints CRUD, filtrage avancé
                             et validation stricte des données grâce à FastAPI et Pydantic.
                         </p>
 
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
                             <li>Endpoints CRUD complets.</li>
                             <li>Filtrage avancé : types, évolution, statistiques, tri.</li>
                             <li>Validation des données avec Pydantic.</li>
@@ -160,11 +160,22 @@
                             <li>Documentation automatique (Swagger UI / ReDoc).</li>
                         </ul>
 
-                        <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> Python, FastAPI, JSON
+                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
+                            <span class="font-semibold text-slate-200">Technologies :</span>
+
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                Python
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                FastAPI
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                JSON
+                            </span>
                         </p>
 
-                        <div class="flex gap-3 text-sm">
+
+                        <div class="flex gap-3 text-base">
                             <a href="https://github.com/williardet/Projet-API-Pokemons" target="_blank"
                                 class="text-sky-400 hover:underline">Code source</a>
                             <a href="https://empowering-flexibility-production.up.railway.app/docs" target="_blank"
@@ -182,8 +193,8 @@
                             alt="Checklist App">
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Application web : TaskMaster</h3>
-                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-base mt-3">
                         <p class="mb-3">
                             TaskMaster est une application web de gestion de tâches offrant une expérience fluide et
                             organisée.
@@ -192,7 +203,7 @@
                             créer une interface dynamique sans framework.
                         </p>
 
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
                             <li>Gestion complète : création, édition, suppression, sous-tâches et progression.</li>
                             <li>Organisation avancée : catégories personnalisables et niveaux de priorité.</li>
                             <li>Vues multiples : liste classique + calendrier.</li>
@@ -202,12 +213,21 @@
                             <li>Corbeille : restauration ou suppression définitive.</li>
                         </ul>
 
-                        <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Stack :</span> JavaScript ES6+, TailwindCSS,
-                            localStorage
+                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
+                            <span class="font-semibold text-slate-200">Technologies :</span>
+
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                JavaScript ES6+
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                TailwindCSS
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                localStorage
+                            </span>
                         </p>
 
-                        <div class="flex gap-3 text-sm">
+                        <div class="flex gap-3 text-base">
                             <a href="https://williardet.github.io/Projet-checklist/" target="_blank"
                                 class="text-sky-400 hover:underline">Voir le site</a>
                         </div>
@@ -223,15 +243,15 @@
                             alt="Joëlle COUTAZ">
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Mini-site pédagogique : Joëlle COUTAZ</h3>
-                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-base mt-3">
                         <p class="mb-3">
                             Projet éducatif dédié à Joëlle Coutaz, pionnière de l'Interaction Homme-Machine.
                             Le site propose une navigation fluide permettant de découvrir sa biographie, ses travaux
                             (dont le modèle PAC) et un module de quiz interactif.
                         </p>
 
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
                             <li>Biographie illustrée et présentation de ses contributions.</li>
                             <li>Quiz dynamique alimenté par un fichier JSON (Fetch API).</li>
                             <li>Navigation responsive avec menu burger.</li>
@@ -239,11 +259,21 @@
                             <li>JavaScript Vanilla pour une logique claire et performante.</li>
                         </ul>
 
-                        <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML5, CSS3, JavaScript
+                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
+                            <span class="font-semibold text-slate-200">Technologies :</span>
+
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                HTML5
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                CSS3
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                JavaScript
+                            </span>
                         </p>
 
-                        <div class="flex gap-3 text-sm">
+                        <div class="flex gap-3 text-base">
                             <a href="https://williardet.github.io/projet-coutaz/" target="_blank"
                                 class="text-sky-400 hover:underline">Voir le site</a>
                         </div>
@@ -259,8 +289,8 @@
                             alt="Air Travel">
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Page web : Air Travel (agence de voyage)</h3>
-                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-base mt-3">
                         <p class="mb-3">
                             T-Air-Travel est une plateforme web immersive conçue pour une agence de voyage moderne.
                             Le site propose un catalogue de destinations internationales, des fiches détaillées,
@@ -268,7 +298,7 @@
                             réel.
                         </p>
 
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
                             <li>Catalogue de destinations avec fiches détaillées.</li>
                             <li>Système de réservation dynamique.</li>
                             <li>Formulaire de contact avec validation JavaScript.</li>
@@ -276,11 +306,21 @@
                             <li>Interface full-responsive (Flexbox & CSS Grid).</li>
                         </ul>
 
-                        <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML5, CSS3, JavaScript
+                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
+                            <span class="font-semibold text-slate-200">Technologies :</span>
+
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                HTML5
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                CSS3
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                JavaScript
+                            </span>
                         </p>
 
-                        <div class="flex gap-3 text-sm">
+                        <div class="flex gap-3 text-base">
                             <a href="https://williardet.github.io/Projet-travels/" target="_blank"
                                 class="text-sky-400 hover:underline">Voir le site</a>
                         </div>
@@ -296,8 +336,8 @@
                             alt="Squid Game">
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Page web : Squid Game catalogue</h3>
-                    <p class="text-xs text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-sm mt-3">
+                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
+                    <div class="project-description hidden text-slate-300 text-base mt-3">
                         <p class="mb-3">
                             Projet inspiré de l'univers de Squid Game, conçu comme une vitrine interactive démontrant
                             une maîtrise avancée
@@ -306,7 +346,7 @@
                             une mise en scène cinématographique.
                         </p>
 
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-xs mb-3">
+                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
                             <li>Navigation horizontale hybride (Scroll Snap + scrollTo).</li>
                             <li>Interactivité multi-plateforme : clavier, AZERTY, gestes tactiles.</li>
                             <li>UI/UX dynamique : animations avancées, effets blur, notifications custom.</li>
@@ -314,11 +354,21 @@
                             <li>Performances optimisées grâce au debounce.</li>
                         </ul>
 
-                        <p class="text-xs text-slate-400 mb-3">
-                            <span class="font-semibold text-slate-200">Technologies :</span> HTML5, CSS3, JavaScript
+                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
+                            <span class="font-semibold text-slate-200">Technologies :</span>
+
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                HTML5
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                CSS3
+                            </span>
+                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                JavaScript
+                            </span>
                         </p>
 
-                        <div class="flex gap-3 text-sm">
+                        <div class="flex gap-3 text-base">
                             <a href="https://williardet.github.io/Projet-Squid-game/" target="_blank"
                                 class="text-sky-400 hover:underline">Voir le site</a>
                         </div>
@@ -329,80 +379,77 @@
         </section>
 
         <section id="competences" class="min-h-screen py-16 border-t border-slate-800">
-            <h2 class="text-3xl font-semibold mb-10">Compétences</h2>
+            <h2 class="text-6xl font-bold mb-10 text-sky-400">Compétences</h2>
 
             <div class="grid md:grid-cols-3 gap-6 text-lg">
 
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
-                    <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-5" />
+                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-5" alt="Icone Backend" />
                         Back-end & Bases de données
                     </h3>
-                    <ul class="space-y-1 text-slate-300">
-                        <li class="flex items-center gap-2">
+                    <ul class="space-y-1">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/python.png" class="w-4" />
                             Python
                         </li>
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl">
                             <img src="images/java.png" class="w-4" />
                             Java
                         </li>
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" class="w-4" />
                             PHP
                         </li>
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-2 py-1 bg-slate-800 text-slate-100 rounded-2xl">
                             <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" class="w-4" />
                             SQL (MySQL / MariaDB)
                         </li>
                     </ul>
                 </div>
 
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
-                    <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-5" />
+                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-5" alt="Icone Frontend" />
                         Front-end
                     </h3>
                     <ul class="space-y-1 text-slate-300">
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" class="w-4 h-4"
                                 alt="HTML5 icon" />
                             HTML5
                         </li>
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="w-4 h-4"
                                 alt="CSS3 icon" />
                             CSS3 (TailwindCSS)
                         </li>
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="w-4 h-4"
                                 alt="JavaScript icon" />
                             JavaScript (React)
                         </li>
                     </ul>
                 </div>
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
-                    <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="w-5" />
+                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="w-5" alt="Icone Frameworks" />
                         Frameworks
                     </h3>
                     <ul class="space-y-1 text-slate-300">
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/document.png" class="w-4 h-4" alt="vue.js icon" />
                             Vue.js
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
                                 class="w-4 h-4" alt="Django icon" />
                             Django
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/laravel-original.svg" class="w-4 h-4" alt="Laravel icon" />
                             Laravel
                         </li>
@@ -410,27 +457,26 @@
                     </ul>
                 </div>
 
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
-                    <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" class="w-5" />
+                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" class="w-5" alt="Icone Outils" />
                         Outils
                     </h3>
                     <ul class="space-y-1 text-slate-300">
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                                 class="w-4 h-4" alt="Git icon" />
                             Git / GitHub
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
                                 class="w-4 h-4" alt="VS Code icon" />
                             VS Code
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                                 class="w-4 h-4" alt="Figma icon" />
                             Figma
@@ -439,37 +485,36 @@
                     </ul>
                 </div>
 
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
-                    <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-5" />
+                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
+                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-5" alt="Icone Transversal" />
                         Compétences transversales
                     </h3>
                     <ul class="space-y-1 text-slate-300">
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn-icons-png.flaticon.com/512/1041/1041373.png" class="w-4 h-4"
                                 alt="Travail en équipe icon" />
                             Travail en équipe
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/agile-methodology.png" class="w-4 h-4"
                                 alt="Intérêt pour les méthodes Agile" />
                             Intérêt pour les méthodes Agile
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/business-chart.png" class="w-4 h-4" alt="Organisation autonomie icon" />
                             Organisation & autonomie
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/adaptation.png" class="w-4 h-4" alt="Adaptabilité icon" />
                             Adaptabilité
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/creative-process.png" class="w-4 h-4" alt="Créativité icon" />
                             Créativité
                         </li>
@@ -478,26 +523,26 @@
                 </div>
 
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition-transform duration-200">
-                    <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1975/1975643.png" class="w-5" />
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
+                    <h3 class="font-semibold mb-3 text-sky-400  flex items-center gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1975/1975643.png" class="w-5" alt="Icone Langues" />
                         Langues
                     </h3>
                     <ul class="space-y-1 text-slate-300">
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" class="w-4 h-4"
                                 alt="Français icon" />
                             Français : langue maternelle
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" class="w-4 h-4"
                                 alt="Anglais icon" />
                             Anglais : B1
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn-icons-png.flaticon.com/512/197/197375.png" class="w-4 h-4"
                                 alt="Mandarin icon" />
                             Mandarin : débutant
@@ -507,24 +552,24 @@
                 </div>
 
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out">
-                    <h3 class="font-semibold mb-3 text-slate-100 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="w-5" />
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
+                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="w-5" alt="Icone Loisirs" />
                         Centres d'intérêt
                     </h3>
                     <ul class="space-y-1 text-slate-300">
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/soccer-ball-variant.png" class="w-4 h-4" alt="Football icon" />
                             Sports collectifs
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/mountaineer.png" class="w-4 h-4" alt="Randonnée montagne icon" />
                             Randonnée en montagne
                         </li>
 
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/pallete.png" class="w-4 h-4" alt="Palette peinture icon" />
                             Culture et loisirs artistiques
                         </li>
@@ -536,13 +581,13 @@
         </section>
 
         <section id="experience" class="min-h-screen py-16 border-t border-slate-800">
-            <h2 class="text-3xl font-semibold mb-10">Expériences</h2>
+            <h2 class="text-5xl font-bold mb-10 text-sky-400">Expériences</h2>
 
             <div class="space-y-10">
 
                 <!-- Workshop -->
                 <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out">
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -585,7 +630,7 @@
 
                 <!-- Employé Logistique -->
                 <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out">
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -607,7 +652,7 @@
 
                 <!-- Engagement associatif -->
                 <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out">
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -631,7 +676,7 @@
 
         <section id="contact"
             class="text-center min-h-screen py-16 border-t border-slate-800 flex flex-col justify-center">
-            <h2 class="text-3xl font-semibold mb-10">Contact</h2>
+            <h2 class="text-5xl font-bold mb-10 text-sky-400">Contact</h2>
 
             <p class="text-slate-300 mb-6 text-lg">
                 Disponible pour une alternance en développement web / Full-stack à partir de 2026-2027.
