@@ -72,12 +72,12 @@
             <h1 class="text-4xl sm:text-5xl md:text-5xl font-bold leading-tight">
                 OVONO ETOUBEMBE
                 <span class="text-sky-400">Julfab Williarde</span><br />
-                <span class="text-slate-300 text-2xl sm:text-3xl">Développeur Web | Full-stack</span>
+                <span class="text-slate-300 text-2xl sm:text-3xl">Data Analyst & Développeur IA</span>
             </h1>
 
             <p class="text-slate-300 text-lg">
-                Étudiant en Licence 2 MIASHS, parcours Informatique à l'Université Toulouse Jean Jaurès.
-                Passionné par le développement back-end, les API et la création d'applications web modernes.
+                Étudiant en Licence 2 MIASHS — Informatique à Toulouse Jean Jaurès, passionné par la data et l'IA,
+                avec un intérêt marqué pour Python, l'analyse de données et leurs applications concrètes.
             </p>
 
             <div class="flex flex-wrap gap-3 justify-end">
@@ -103,23 +103,22 @@
                 <h2 class="text-5xl font-bold text-sky-400">À propos</h2>
                 <p class="text-slate-300 text-lg">
                     Actuellement en Licence 2 MIASHS, parcours Informatique à l'Université Toulouse Jean Jaurès, je
-                    développe mes compétences en programmation, en algorithmique et en conception d'applications web.
-                    Passionné par le développement Full-stack, je m'investis dans l'apprentissage du Back-end comme du
-                    Front-end afin de construire des solutions fiables, structurées et adaptées aux besoins des
-                    utilisateurs.
+                    développe mes compétences en analyse de données, programmation Python et intelligence artificielle.
+                    Passionné par la data et ses applications, je m'investis dans l'apprentissage du traitement de
+                    données, de la visualisation et des outils d'IA afin de construire des solutions fiables et utiles à
+                    la prise de décision.
                 </p>
                 <p class="text-slate-300 text-lg">
                     J'ai déjà travaillé sur des projets utilisant
-                    <span class="text-sky-400">Python (FastAPI)</span>,
-                    <span class="text-sky-400">HTML5 / CSS3 / JavaScript</span>
-                    et <span class="text-sky-400">MySQL</span>.
+                    <span class="text-sky-400">Python (FastAPI, Pandas)</span>,
+                    <span class="text-sky-400">SQL (MySQL, MariaDB, PostgreSQL)</span>
+                    et <span class="text-sky-400">R / RMarkdown</span>.
                     Parallèlement, je développe mes compétences en
-                    <span class="text-sky-400">Java</span> et en
-                    <span class="text-sky-400">PHP</span>, deux langages sur lesquels je
-                    souhaite particulièrement progresser afin d'approfondir mes connaissances en Back-end. Mon objectif
-                    est de concevoir des API fiables et de contribuer à des projets web complets, robustes et bien
-                    structurés, pour devenir un développeur Full-stack polyvalent, aussi performant en Front-end qu'en
-                    Back-end.
+                    <span class="text-sky-400">analyse de données</span> et en
+                    <span class="text-sky-400">intelligence artificielle</span>, deux domaines sur lesquels je
+                    souhaite particulièrement progresser. Mon objectif est de combiner développement Python et analyse
+                    de données pour contribuer à des projets concrets, en exploitant des outils comme <span class="text-sky-400">Power BI</span> et
+                    <span class="text-sky-400">Jupyter Notebook</span> pour transformer les données en insights utiles.
                 </p>
             </div>
 
@@ -133,244 +132,120 @@
         <section id="projets" class="min-h-screen py-16 border-t border-slate-800">
             <h2 class="text-5xl font-bold mb-10 text-sky-400">Projets</h2>
 
-            <div class="grid md:grid-cols-2 gap-8 ">
+            <div class="space-y-8">
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
-                    tabindex="0" aria-expanded="false">
-                    <div class="overflow-hidden rounded-md mb-4">
-                        <img src="images/Capture d'écran 2026-02-13 113141.png"
-                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                            alt="Projet FastAPI">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">API REST en FastAPI</h3>
-                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-base mt-3">
-                        <p class="mb-3">
-                            API REST complète permettant de gérer un ensemble de Pokémon à partir d'un fichier JSON.
-                            Le projet repose sur une architecture structurée avec endpoints CRUD, filtrage avancé
-                            et validation stricte des données grâce à FastAPI et Pydantic.
-                        </p>
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="md:w-1/2 overflow-hidden rounded-md">
+                            <img src="images/Capture d'écran 2026-02-13 113141.png"
+                                class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                                alt="Projet FastAPI">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h3 class="text-xl font-semibold mb-2">API REST en FastAPI</h3>
+                            <div class="text-slate-300 text-base mt-3">
+                                <p class="mb-3">
+                                    API REST complète permettant de gérer un ensemble de Pokémon à partir d'un fichier
+                                    JSON.
+                                    Le projet repose sur une architecture structurée avec endpoints CRUD, filtrage
+                                    avancé
+                                    et validation stricte des données grâce à FastAPI et Pydantic.
+                                </p>
 
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
-                            <li>Endpoints CRUD complets.</li>
-                            <li>Filtrage avancé : types, évolution, statistiques, tri.</li>
-                            <li>Validation des données avec Pydantic.</li>
-                            <li>Gestion centralisée des erreurs.</li>
-                            <li>Documentation automatique (Swagger UI / ReDoc).</li>
-                        </ul>
+                                <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
+                                    <li>Endpoints CRUD complets.</li>
+                                    <li>Filtrage avancé : types, évolution, statistiques, tri.</li>
+                                    <li>Validation des données avec Pydantic.</li>
+                                    <li>Gestion centralisée des erreurs.</li>
+                                    <li>Documentation automatique (Swagger UI / ReDoc).</li>
+                                </ul>
 
-                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
-                            <span class="font-semibold text-slate-200">Technologies :</span>
+                                <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
+                                    <span class="font-semibold text-slate-200">Technologies :</span>
 
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                Python
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                FastAPI
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                JSON
-                            </span>
-                        </p>
+                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                        Python
+                                    </span>
+                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                        FastAPI
+                                    </span>
+                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                        JSON
+                                    </span>
+                                </p>
 
-
-                        <div class="flex gap-3 text-base">
-                            <a href="https://github.com/williardet/Projet-API-Pokemons" target="_blank"
-                                class="text-sky-400 hover:underline">Code source</a>
-                            <a href="https://empowering-flexibility-production.up.railway.app/docs" target="_blank"
-                                class="text-sky-400 hover:underline">Documentation</a>
+                                <div class="flex gap-3 text-base">
+                                    <a href="https://github.com/julfab-williarde/API-Pokemon" target="_blank"
+                                        class="text-sky-400 hover:underline">Code source</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
-                    tabindex="0" aria-expanded="false">
-                    <div class="overflow-hidden rounded-md mb-4">
-                        <img src="images/checklist-app.png"
-                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                            alt="Checklist App">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Application web : TaskMaster</h3>
-                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-base mt-3">
-                        <p class="mb-3">
-                            TaskMaster est une application web de gestion de tâches offrant une expérience fluide et
-                            organisée.
-                            Développée en JavaScript Vanilla avec une architecture modulaire, elle met en avant ma
-                            capacité à
-                            créer une interface dynamique sans framework.
-                        </p>
-
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
-                            <li>Gestion complète : création, édition, suppression, sous-tâches et progression.</li>
-                            <li>Organisation avancée : catégories personnalisables et niveaux de priorité.</li>
-                            <li>Vues multiples : liste classique + calendrier.</li>
-                            <li>Filtres intelligents : Aujourd'hui, Important, En retard, recherche, statut, priorité.
-                            </li>
-                            <li>UX moderne : drag & drop, mode sombre, notifications, modales.</li>
-                            <li>Corbeille : restauration ou suppression définitive.</li>
-                        </ul>
-
-                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
-                            <span class="font-semibold text-slate-200">Technologies :</span>
-
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                JavaScript ES6+
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                TailwindCSS
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                localStorage
-                            </span>
-                        </p>
-
-                        <div class="flex gap-3 text-base">
-                            <a href="https://williardet.github.io/Projet-checklist/" target="_blank"
-                                class="text-sky-400 hover:underline">Voir le site</a>
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="md:w-1/2 overflow-hidden rounded-md">
+                            <img src="images/Copilot_20260505_084250.png"
+                                class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                                alt="Checklist App">
                         </div>
-                    </div>
-                </article>
+                        <div class="md:w-1/2">
+                            <h3 class="text-xl font-semibold mb-2">projet analyse qualité de l'air en Occitanie</h3>
+                            <div class="text-slate-300 text-base mt-3">
+                                <p class="mb-3">
+                                    Ce projet s’inscrit dans une démarche de Data Engineering appliquée à l’étude
+                                    environnementale. Il consiste à intégrer, structurer et analyser des données
+                                    climatiques,
+                                    géographiques et atmosphériques relatives à la région Occitanie. Un pipeline ETL
+                                    permet
+                                    d’ingérer et de nettoyer des fichiers CSV hétérogènes avant leur intégration dans
+                                    une base
+                                    de données relationnelle SQLite, modélisée selon les principes de normalisation et
+                                    d’intégrité référentielle. Des requêtes SQL analytiques sont ensuite mobilisées
+                                    pour
+                                    produire des jeux de données répondant à plusieurs problématiques scientifiques,
+                                    notamment
+                                    l’étude des interactions entre conditions météorologiques, typologie territoriale
+                                    et
+                                    concentration en polluants (NO₂).
+                                </p>
 
-                <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
-                    tabindex="0" aria-expanded="false">
-                    <div class="overflow-hidden rounded-md mb-4">
-                        <img src="images/Scientifique cartoon.png"
-                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                            alt="Joëlle COUTAZ">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Mini-site pédagogique : Joëlle COUTAZ</h3>
-                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-base mt-3">
-                        <p class="mb-3">
-                            Projet éducatif dédié à Joëlle Coutaz, pionnière de l'Interaction Homme-Machine.
-                            Le site propose une navigation fluide permettant de découvrir sa biographie, ses travaux
-                            (dont le modèle PAC) et un module de quiz interactif.
-                        </p>
+                                <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
+                                    <li>Scripts ETL et automatisation.</li>
+                                    <li>Nettoyage, filtrage et préparation des données.</li>
+                                    <li>Modélisation relationnelle et stockage structuré.</li>
+                                    <li>Jointures, agrégations et extraction analytique.</li>
+                                    <li>Sources brutes et datasets produits.</li>
+                                </ul>
 
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
-                            <li>Biographie illustrée et présentation de ses contributions.</li>
-                            <li>Quiz dynamique alimenté par un fichier JSON (Fetch API).</li>
-                            <li>Navigation responsive avec menu burger.</li>
-                            <li>Design moderne basé sur CSS Grid, Flexbox et variables CSS.</li>
-                            <li>JavaScript Vanilla pour une logique claire et performante.</li>
-                        </ul>
+                                <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
+                                    <span class="font-semibold text-slate-200">Technologies :</span>
 
-                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
-                            <span class="font-semibold text-slate-200">Technologies :</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                        Python 3
+                                    </span>
+                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                        Pandas
+                                    </span>
+                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                        SQLite
+                                    </span>
+                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                        SQL
+                                    </span>
+                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
+                                        CSV
+                                    </span>
+                                </p>
 
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                HTML5
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                CSS3
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                JavaScript
-                            </span>
-                        </p>
-
-                        <div class="flex gap-3 text-base">
-                            <a href="https://williardet.github.io/projet-coutaz/" target="_blank"
-                                class="text-sky-400 hover:underline">Voir le site</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
-                    tabindex="0" aria-expanded="false">
-                    <div class="overflow-hidden rounded-md mb-4">
-                        <img src="images/Page d'accueil Air T.png"
-                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                            alt="Air Travel">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Page web : Air Travel (agence de voyage)</h3>
-                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-base mt-3">
-                        <p class="mb-3">
-                            T-Air-Travel est une plateforme web immersive conçue pour une agence de voyage moderne.
-                            Le site propose un catalogue de destinations internationales, des fiches détaillées,
-                            un système de réservation dynamique et un formulaire de contact avec validation en temps
-                            réel.
-                        </p>
-
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
-                            <li>Catalogue de destinations avec fiches détaillées.</li>
-                            <li>Système de réservation dynamique.</li>
-                            <li>Formulaire de contact avec validation JavaScript.</li>
-                            <li>Design sombre et animations CSS3 avancées.</li>
-                            <li>Interface full-responsive (Flexbox & CSS Grid).</li>
-                        </ul>
-
-                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
-                            <span class="font-semibold text-slate-200">Technologies :</span>
-
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                HTML5
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                CSS3
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                JavaScript
-                            </span>
-                        </p>
-
-                        <div class="flex gap-3 text-base">
-                            <a href="https://williardet.github.io/Projet-travels/" target="_blank"
-                                class="text-sky-400 hover:underline">Voir le site</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 cursor-pointer project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10"
-                    tabindex="0" aria-expanded="false">
-                    <div class="overflow-hidden rounded-md mb-4">
-                        <img src="images/SQGM.png"
-                            class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                            alt="Squid Game">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Page web : Squid Game catalogue</h3>
-                    <p class="text-sm text-sky-400 mb-1">Cliquer pour en savoir plus</p>
-                    <div class="project-description hidden text-slate-300 text-base mt-3">
-                        <p class="mb-3">
-                            Projet inspiré de l'univers de Squid Game, conçu comme une vitrine interactive démontrant
-                            une maîtrise avancée
-                            du JavaScript Vanilla. L'expérience repose sur une navigation horizontale fluide et
-                            immersive, pensée comme
-                            une mise en scène cinématographique.
-                        </p>
-
-                        <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
-                            <li>Navigation horizontale hybride (Scroll Snap + scrollTo).</li>
-                            <li>Interactivité multi-plateforme : clavier, AZERTY, gestes tactiles.</li>
-                            <li>UI/UX dynamique : animations avancées, effets blur, notifications custom.</li>
-                            <li>Interface responsive mobile-first (Grid & Flexbox).</li>
-                            <li>Performances optimisées grâce au debounce.</li>
-                        </ul>
-
-                        <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
-                            <span class="font-semibold text-slate-200">Technologies :</span>
-
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                HTML5
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                CSS3
-                            </span>
-                            <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                JavaScript
-                            </span>
-                        </p>
-
-                        <div class="flex gap-3 text-base">
-                            <a href="https://williardet.github.io/Projet-Squid-game/" target="_blank"
-                                class="text-sky-400 hover:underline">Voir le site</a>
+                                <div class="flex gap-3 text-base">
+                                    <a href="https://williardet.github.io/Projet-checklist/" target="_blank"
+                                        class="text-sky-400 hover:underline">Code source</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -383,35 +258,32 @@
 
             <div class="grid md:grid-cols-3 gap-6 text-lg">
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-5" alt="Icone Backend" />
-                        Back-end & Bases de données
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-5"
+                            alt="Icone Backend" />
+                        Langages & Analyse
                     </h3>
                     <ul class="space-y-1">
                         <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="images/python.png" class="w-4" />
-                            Python
+                            Python (FastAPI, Pandas)
                         </li>
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl">
-                            <img src="images/java.png" class="w-4" />
-                            Java
-                        </li>
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" class="w-4" />
-                            PHP
-                        </li>
+
                         <li class="flex items-center gap-2 px-2 py-1 bg-slate-800 text-slate-100 rounded-2xl">
                             <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" class="w-4" />
-                            SQL (MySQL / MariaDB)
+                            SQL avancé (MySQL, MariaDB,PostgreSQL)
                         </li>
                     </ul>
                 </div>
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-5" alt="Icone Frontend" />
-                        Front-end
+                        <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-5"
+                            alt="Icone Frontend" />
+                        Développement web
                     </h3>
                     <ul class="space-y-1 text-slate-300">
                         <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
@@ -429,37 +301,51 @@
                                 alt="JavaScript icon" />
                             JavaScript (React)
                         </li>
+                        <li
+                            class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl">
+                            <img src="images/java.png" class="w-4" />
+                            Java
+                        </li>
+                        <li
+                            class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" class="w-4" />
+                            PHP
+                        </li>
                     </ul>
                 </div>
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="w-5" alt="Icone Frameworks" />
-                        Frameworks
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="w-5"
+                            alt="Icone Frameworks" />
+                        Visualisation & Reporting
                     </h3>
                     <ul class="space-y-1 text-slate-300">
 
                         <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/document.png" class="w-4 h-4" alt="vue.js icon" />
-                            Vue.js
+                            <img src="images/document.png" class="w-4 h-4" />
+                            Power BI
                         </li>
 
                         <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                                class="w-4 h-4" alt="Django icon" />
-                            Django
+                                class="w-4 h-4" />
+                            Excel
                         </li>
 
                         <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/laravel-original.svg" class="w-4 h-4" alt="Laravel icon" />
-                            Laravel
+                            <img src="images/laravel-original.svg" class="w-4 h-4" />
+                            Jupyter Notebook
                         </li>
 
                     </ul>
                 </div>
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" class="w-5" alt="Icone Outils" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" class="w-5"
+                            alt="Icone Outils" />
                         Outils
                     </h3>
                     <ul class="space-y-1 text-slate-300">
@@ -473,9 +359,18 @@
                         <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
                                 class="w-4 h-4" alt="VS Code icon" />
-                            VS Code
+                            Visual Studio Code
                         </li>
-
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                class="w-4 h-4" />
+                            R/RStudio
+                        </li>
+                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                class="w-4 h-4" />
+                            Microsoft 365 / Office 365 (notions)
+                        </li>
                         <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                                 class="w-4 h-4" alt="Figma icon" />
@@ -485,9 +380,11 @@
                     </ul>
                 </div>
 
-                <div class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
+                <div
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-5" alt="Icone Transversal" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-5"
+                            alt="Icone Transversal" />
                         Compétences transversales
                     </h3>
                     <ul class="space-y-1 text-slate-300">
@@ -525,7 +422,8 @@
                 <div
                     class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
                     <h3 class="font-semibold mb-3 text-sky-400  flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1975/1975643.png" class="w-5" alt="Icone Langues" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/1975/1975643.png" class="w-5"
+                            alt="Icone Langues" />
                         Langues
                     </h3>
                     <ul class="space-y-1 text-slate-300">
@@ -554,7 +452,8 @@
                 <div
                     class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="w-5" alt="Icone Loisirs" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="w-5"
+                            alt="Icone Loisirs" />
                         Centres d'intérêt
                     </h3>
                     <ul class="space-y-1 text-slate-300">
@@ -679,7 +578,7 @@
             <h2 class="text-5xl font-bold mb-10 text-sky-400">Contact</h2>
 
             <p class="text-slate-300 mb-6 text-lg">
-                Disponible pour une alternance en développement web / Full-stack à partir de 2026-2027.
+                Disponible pour une alternance en Data Analyst & Développement IA à partir de 2026-2027.
             </p>
 
             <div class="space-y-4 text-lg mx-auto flex flex-col items-center text-center">
@@ -701,17 +600,8 @@
                 <p class="flex items-center gap-3">
                     <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="w-6" />
                     <span class="font-semibold text-slate-100">GitHub :</span>
-                    <a href="https://github.com/williardet" target="_blank" class="text-sky-400 hover:underline">
+                    <a href="https://github.com/julfab-williarde" target="_blank" class="text-sky-400 hover:underline">
                         github-Julfab
-                    </a>
-                </p>
-
-                <p class="flex items-center gap-3">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" class="w-6" />
-                    <span class="font-semibold text-slate-100">LinkedIn :</span>
-                    <a href="https://www.linkedin.com/in/julfab-ovono-27a339263/" target="_blank"
-                        class="text-sky-400 hover:underline">
-                        linkedin-Julfab
                     </a>
                 </p>
 
@@ -722,7 +612,7 @@
     </main>
 
     <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500 mt-8">
-        © 2026 - OVONO ETOUBEMBE Julfab Williarde · Portfolio Développeur Web / Full-stack
+        © 2026 - OVONO ETOUBEMBE Julfab Williarde · Portfolio Data Analyst & Développeur IA
     </footer>
 
 </body>

@@ -133,23 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateScrollIndicator);
     updateScrollIndicator();
 
-    // --- Accordéon Projets avec Accessibilité ---
-    const toggleProject = (card) => {
-        const desc = card.querySelector(".project-description");
-        const isHidden = desc.classList.toggle("hidden");
-        card.setAttribute("aria-expanded", !isHidden);
-    };
-
-    document.querySelectorAll(".project-card").forEach(card => {
-        card.addEventListener("click", () => toggleProject(card));
-        card.addEventListener("keydown", (e) => {
-            if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                toggleProject(card);
-            }
-        });
-    });
-
     // --- Menu Mobile ---
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
