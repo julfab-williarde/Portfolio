@@ -28,7 +28,7 @@
     <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-20">
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="font-semibold tracking-tight text-lg">
-                <a href="#accueil" class="text-sky-400">Julfab</a> · Développeur Web / Full-stack
+                <p><a href="#accueil" class="text-sky-400">Julfab</a> · Data Analyst & Développeur IA </p>
             </div>
 
             <!-- Bouton Menu Mobile -->
@@ -99,7 +99,7 @@
         <section id="apropos"
             class="min-h-screen py-16 flex items-center justify-center md:justify-between px-10 gap-12 flex-wrap">
 
-            <div class="max-w-xl mx-auto flex flex-col gap-6 items-center md:items-start text-justify">
+            <div class="max-w-xl mx-auto flex flex-col gap-6 items-center md:items-start text-justify reveal">
                 <h2 class="text-5xl font-bold text-sky-400">À propos</h2>
                 <p class="text-slate-300 text-lg">
                     Actuellement en Licence 2 MIASHS, parcours Informatique à l'Université Toulouse Jean Jaurès, je
@@ -122,7 +122,7 @@
                 </p>
             </div>
 
-            <div class="w-[280px] flex mx-auto justify-center">
+            <div class="w-[280px] flex mx-auto justify-center reveal">
                 <img src="images/Développeur passionné entouré d'icônes Tech.png" alt="Avatar 3D Julfab"
                     class="w-full h-auto object-contain">
             </div>
@@ -135,7 +135,7 @@
             <div class="space-y-8">
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="md:w-1/2 overflow-hidden rounded-md">
                             <img src="images/Capture d'écran 2026-02-13 113141.png"
@@ -144,7 +144,7 @@
                         </div>
                         <div class="md:w-1/2">
                             <h3 class="text-xl font-semibold mb-2">API REST en FastAPI</h3>
-                            <div class="text-slate-300 text-base mt-3">
+                            <div class="description-content text-slate-300 text-base mt-3">
                                 <p class="mb-3">
                                     API REST complète permettant de gérer un ensemble de Pokémon à partir d'un fichier
                                     JSON.
@@ -160,7 +160,10 @@
                                     <li>Gestion centralisée des erreurs.</li>
                                     <li>Documentation automatique (Swagger UI / ReDoc).</li>
                                 </ul>
+                            </div>
+                            <button class="read-more-btn text-sky-400 hover:text-sky-300 text-sm mt-2 font-medium focus:outline-none">Lire la suite...</button>
 
+                            <div class="mt-4">
                                 <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
                                     <span class="font-semibold text-slate-200">Technologies :</span>
 
@@ -185,7 +188,7 @@
                 </article>
 
                 <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="md:w-1/2 overflow-hidden rounded-md">
                             <img src="images/Copilot_20260505_084250.png"
@@ -194,7 +197,7 @@
                         </div>
                         <div class="md:w-1/2">
                             <h3 class="text-xl font-semibold mb-2">projet analyse qualité de l'air en Occitanie</h3>
-                            <div class="text-slate-300 text-base mt-3">
+                            <div class="description-content text-slate-300 text-base mt-3">
                                 <p class="mb-3">
                                     Ce projet s’inscrit dans une démarche de Data Engineering appliquée à l’étude
                                     environnementale. Il consiste à intégrer, structurer et analyser des données
@@ -220,7 +223,10 @@
                                     <li>Jointures, agrégations et extraction analytique.</li>
                                     <li>Sources brutes et datasets produits.</li>
                                 </ul>
+                            </div>
+                            <button class="read-more-btn text-sky-400 hover:text-sky-300 text-sm mt-2 font-medium focus:outline-none">Lire la suite...</button>
 
+                            <div class="mt-4">
                                 <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
                                     <span class="font-semibold text-slate-200">Technologies :</span>
 
@@ -259,7 +265,7 @@
             <div class="grid md:grid-cols-3 gap-6 text-lg">
 
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-5"
                             alt="Icone Backend" />
@@ -279,7 +285,7 @@
                 </div>
 
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-5"
                             alt="Icone Frontend" />
@@ -314,7 +320,7 @@
                     </ul>
                 </div>
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="w-5"
                             alt="Icone Frameworks" />
@@ -341,7 +347,7 @@
                 </div>
 
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" class="w-5"
                             alt="Icone Outils" />
@@ -378,7 +384,7 @@
                 </div>
 
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-5"
                             alt="Icone Transversal" />
@@ -417,7 +423,7 @@
                 </div>
 
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <h3 class="font-semibold mb-3 text-sky-400  flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/1975/1975643.png" class="w-5"
                             alt="Icone Langues" />
@@ -447,7 +453,7 @@
                 </div>
 
                 <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
                         <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="w-5"
                             alt="Icone Loisirs" />
@@ -483,7 +489,7 @@
 
                 <!-- Workshop -->
                 <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -526,7 +532,7 @@
 
                 <!-- Employé Logistique -->
                 <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -548,7 +554,7 @@
 
                 <!-- Engagement associatif -->
                 <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10">
+                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10 reveal">
                     <div class="flex items-center gap-3 mb-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" class="w-8" />
                         <h3 class="text-xl font-semibold text-sky-400">
@@ -578,7 +584,7 @@
                 Disponible pour une alternance en Data Analyst & Développement IA à partir de 2026-2027.
             </p>
 
-            <div class="space-y-4 text-lg mx-auto flex flex-col items-center text-center">
+            <div class="space-y-4 text-lg mx-auto flex flex-col items-center text-center reveal">
 
                 <p class="flex items-center gap-3">
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-6" />

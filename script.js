@@ -155,4 +155,32 @@ document.addEventListener('DOMContentLoaded', () => {
             menuIcon.setAttribute('d', hamburgerPath);
         });
     });
+
+    // --- Gestion du "Lire la suite" dans les Projets ---
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+    readMoreBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const container = btn.previousElementSibling;
+            const isExpanded = container.classList.toggle('expanded');
+            btn.textContent = isExpanded ? 'Réduire' : 'Lire la suite...';
+        });
+    });
+
+    // --- Animation d'apparition au défilement (Intersection Observer) ---
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // On peut arrêter d'observer l'élément une fois l'animation jouée
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15 // L'élément doit être visible à 15% pour déclencher l'animation
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
 });
