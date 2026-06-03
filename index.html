@@ -2,620 +2,319 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - OVONO ETOUBEMBE Julfab Williarde</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="celtic-knot.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julfab Williarde — Data & IA</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='8' fill='%230b0e14'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='monospace' fill='%234af0b0'>JW</text></svg>">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body class="text-slate-100">
+<body>
 
-    <div id="stars-container"></div>
-
-    <div id="scroll-indicator"
-        class="fixed left-1/2 bottom-6 z-30 -translate-x-1/2 flex flex-col items-center text-slate-100 transition-opacity duration-300 opacity-100">
-        <a href="#apropos" class="flex flex-col items-center text-sky-400 hover:text-sky-300"
-            aria-label="Défiler vers la section À propos">
-            <div class="w-10 h-10 bg-sky-900 rounded-full shadow-2xl flex items-center justify-center animate-bounce">
-                <span class="text-white text-2xl">↓</span>
+    <nav>
+        <div class="nav-inner">
+            <span class="nav-logo">JW.dev</span>
+            <div class="nav-links">
+                <a href="#projets">projets</a>
+                <a href="#competences">compétences</a>
+                <a href="#formation">formation</a>
+                <a href="#contact">contact</a>
             </div>
-        </a>
+        </div>
+    </nav>
+
+    <div class="wrap">
+
+        <!-- HERO -->
+        <div class="hero">
+            <p class="hero-label">Portfolio — Recherche d'alternance</p>
+            <h1>Julfab<br><span>Williarde</span></h1>
+            <p class="hero-sub">Data Analyst & Développeur IA · L2 MIASHS — Université Toulouse Jean Jaurès</p>
+            <p class="hero-desc">
+                Étudiant en MIASHS, parcours Informatique, je développe des compétences solides en analyse de données,
+                Python et intelligence artificielle. Mon objectif : combiner rigueur mathématique et développement pour
+                construire des pipelines de données et des solutions IA utiles à la décision.
+            </p>
+
+            <div class="alt-card">
+                <div class="alt-item">
+                    <span class="alt-label">Contrat recherché</span>
+                    <span class="alt-value">Alternance — L3 MIASHS</span>
+                </div>
+                <div class="alt-sep"></div>
+                <div class="alt-item">
+                    <span class="alt-label">Domaine</span>
+                    <span class="alt-value">Data Analyst · Développement IA</span>
+                </div>
+                <div class="alt-sep"></div>
+                <div class="alt-item">
+                    <span class="alt-label">Rythme</span>
+                    <span class="alt-value">5 sem. formation / 4 sem. entreprise</span>
+                </div>
+                <div class="alt-sep"></div>
+                <div class="alt-item">
+                    <span class="alt-label">Disponibilité</span>
+                    <span class="alt-value">Septembre 2026</span>
+                </div>
+                <div class="alt-sep"></div>
+                <div class="alt-item">
+                    <span class="alt-label">Mobilité</span>
+                    <span class="alt-value">Toulouse · Paris · Lyon · Bordeaux</span>
+                </div>
+            </div>
+
+            <div class="hero-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Engineering</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag blue">SQL</span>
+                <span class="tag blue">FastAPI</span>
+                <span class="tag blue">Pandas</span>
+            </div>
+            <div class="hero-contact">
+                <a href="mailto:christwilliarde@gmail.com">
+                    <svg viewBox="0 0 24 24" stroke-width="1.5">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m2 7 10 7 10-7" />
+                    </svg>
+                    christwilliarde@gmail.com
+                </a>
+                <a href="tel:+33761530252">
+                    <svg viewBox="0 0 24 24" stroke-width="1.5">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.07 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L9.09 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17v-.08z" />
+                    </svg>
+                    +33 7 61 53 02 52
+                </a>
+                <a href="https://github.com/julfab-williarde" target="_blank">
+                    <svg viewBox="0 0 24 24" stroke-width="1.5">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                    github-Julfab
+                </a>
+            </div>
+        </div>
+
+        <!-- PROJETS -->
+        <section id="projets">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <span class="section-title">PROJETS</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects">
+
+                <div class="project-card">
+                    <div class="project-top">
+                        <span class="project-title">Analyse qualité de l'air — Occitanie</span>
+                        <span class="project-type">Data Engineering</span>
+                    </div>
+                    <p class="project-desc">Pipeline ETL complet sur des données climatiques et atmosphériques de la
+                        région Occitanie. Intégration de fichiers CSV hétérogènes, modélisation relationnelle et analyse
+                        de la corrélation entre météo, territoire et concentration de polluants (NO₂).</p>
+                    <ul class="project-feats">
+                        <li>Pipeline ETL automatisé avec nettoyage et normalisation des données</li>
+                        <li>Modélisation relationnelle SQLite avec intégrité référentielle</li>
+                        <li>Requêtes analytiques SQL : jointures, agrégations, insights environnementaux</li>
+                    </ul>
+                    <div class="project-stack">
+                        <span class="stack-badge">Python 3</span>
+                        <span class="stack-badge">Pandas</span>
+                        <span class="stack-badge">SQLite</span>
+                        <span class="stack-badge">SQL</span>
+                        <span class="stack-badge">ETL</span>
+                    </div>
+
+                    <a href="https://github.com/julfab-williarde/projet-analyse-qualit-de-l-air-en-Occitanie"
+                        target="_blank" class="proj-link">Voir sur GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-top">
+                        <span class="project-title">API REST Pokémon — FastAPI</span>
+                        <span class="project-type">Dev Backend</span>
+                    </div>
+                    <p class="project-desc">API REST complète avec architecture structurée, endpoints CRUD, filtrage
+                        avancé et validation stricte des données. Projet démontrant la maîtrise de la conception d'API
+                        robustes en Python.</p>
+                    <ul class="project-feats">
+                        <li>Endpoints CRUD + filtrage par types, statistiques et évolution</li>
+                        <li>Validation des données avec Pydantic</li>
+                        <li>Documentation automatique Swagger UI / ReDoc</li>
+                    </ul>
+                    <div class="project-stack">
+                        <span class="stack-badge">Python</span>
+                        <span class="stack-badge">FastAPI</span>
+                        <span class="stack-badge">Pydantic</span>
+                        <span class="stack-badge">REST</span>
+                    </div>
+
+                    <a href="https://github.com/julfab-williarde/API-Pokemon" target="_blank" class="proj-link">Voir sur
+                        GitHub →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- COMPÉTENCES -->
+        <section id="competences">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <span class="section-title">COMPÉTENCES</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <p class="skill-group-title">Data & IA</p>
+                    <div class="skill-list">
+                        <span class="skill-item hi">Python</span>
+                        <span class="skill-item hi">Pandas</span>
+                        <span class="skill-item hi">NumPy</span>
+                        <span class="skill-item hi">Jupyter</span>
+                        <span class="skill-item hi">Scikit-learn</span>
+                        <span class="skill-item">Power BI</span>
+                        <span class="skill-item">R / RStudio</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-title">Bases de données</p>
+                    <div class="skill-list">
+                        <span class="skill-item hi">SQL</span>
+                        <span class="skill-item hi">SQLite</span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">MariaDB</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-title">Développement</p>
+                    <div class="skill-list">
+                        <span class="skill-item hi">FastAPI</span>
+                        <span class="skill-item hi">Git / GitHub</span>
+                        <span class="skill-item">REST API</span>
+                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">VS Code</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-title">Transversal</p>
+                    <div class="skill-list">
+                        <span class="skill-item">Travail en équipe</span>
+                        <span class="skill-item">Autonomie</span>
+                        <span class="skill-item">Méthodes Agile</span>
+                        <span class="skill-item">Adaptabilité</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMATION -->
+        <section id="formation">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <span class="section-title">FORMATION</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="edu-list">
+
+                <div class="edu-card">
+                    <span class="edu-year">2024 →<br>2027</span>
+                    <div class="edu-content">
+                        <h3>Licence MIASHS — Parcours Informatique</h3>
+                        <p>Université Toulouse Jean Jaurès</p>
+                        <div class="edu-progress">
+                            <span class="edu-badge done">L1 validée · 2024–2025</span>
+                            <span class="edu-badge current">L2 en cours · 2025–2026</span>
+                            <span class="edu-badge next">L3 en alternance · sept. 2026</span>
+                        </div>
+                        <p style="margin-top:0.75rem; font-size:0.85rem; color:#8896aa;">Mathématiques appliquées ·
+                            Statistiques · Algorithmique · Bases de données · Python</p>
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <span class="edu-year">2022 →<br>2024</span>
+                    <div class="edu-content">
+                        <h3>Bachelor Développement & Conception de Solutions Digitales</h3>
+                        <p>Institut Supérieur de Management — Digital Campus · Dakar</p>
+                        <div class="edu-progress">
+                            <span class="edu-badge done">L1 validée</span>
+                            <span class="edu-badge done">L2 validée</span>
+                        </div>
+                        <p style="margin-top:0.75rem; font-size:0.85rem; color:#8896aa;">Développement web · Conception
+                            de solutions numériques · Gestion de projet</p>
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <span class="edu-year">2022</span>
+                    <div class="edu-content">
+                        <h3>Baccalauréat Scientifique — mention</h3>
+                        <p>Libreville, Gabon</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPÉRIENCES -->
+        <section>
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <span class="section-title">EXPÉRIENCES</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="exp-list">
+                <div class="exp-item">
+                    <span class="exp-date">1 semaine<br>2023</span>
+                    <div class="exp-body">
+                        <h3>Workshop — Communication visuelle & Maquette web</h3>
+                        <p class="org">Institut Supérieur de Management de Dakar · Collaboration entreprise</p>
+                        <p>Projet en équipe pluridisciplinaire : identité visuelle, maquette web et vidéo de
+                            présentation en réponse à une problématique réelle d'entreprise. Gestion de projet courte
+                            durée.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <span class="exp-date">Été 2024</span>
+                    <div class="exp-body">
+                        <h3>Employé logistique — Emploi étudiant</h3>
+                        <p class="org">RentréeDiscount · Toulouse</p>
+                        <p>Préparation de commandes, gestion des stocks et contrôle qualité. Rigueur opérationnelle et
+                            organisation en environnement exigeant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact" style="border-bottom:none;">
+            <div class="cta-block">
+                <h2>Disponible en <span>alternance</span></h2>
+                <p>Data Analyst / Développement IA · L3 MIASHS · Rythme 5 sem. formation / 4 sem. entreprise · Dispo
+                    septembre 2026 · Toulouse & télétravail</p>
+                <div class="cta-contacts">
+                    <a href="mailto:christwilliarde@gmail.com" class="cta-btn">christwilliarde@gmail.com</a>
+                    <a href="tel:+33761530252" class="cta-btn secondary">+33 7 61 53 02 52</a>
+                    <a href="https://github.com/julfab-williarde" target="_blank" class="cta-btn secondary">GitHub →</a>
+                </div>
+            </div>
+        </section>
+
     </div>
 
-    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-20">
-        <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="font-semibold tracking-tight text-lg">
-                <p><a href="#accueil" class="text-sky-400">Julfab</a> · Data Analyst & Développeur IA </p>
-            </div>
-
-            <!-- Bouton Menu Mobile -->
-            <button id="menu-toggle" class="md:hidden text-slate-100 hover:text-sky-400 focus:outline-none"
-                aria-label="Ouvrir le menu">
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-
-            <nav class="hidden md:flex gap-6 text-lg">
-                <a href="#apropos" class="hover:text-sky-400">À propos</a>
-                <a href="#projets" class="hover:text-sky-400">Projets</a>
-                <a href="#competences" class="hover:text-sky-400">Compétences</a>
-                <a href="#experience" class="hover:text-sky-400">Expériences</a>
-                <a href="#contact" class="hover:text-sky-400">Contact</a>
-            </nav>
-        </div>
-
-        <!-- Menu Mobile Déroulant -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-950/95 border-b border-slate-800"
-            aria-label="Menu mobile">
-            <nav class="flex flex-col items-center gap-6 py-8 text-lg">
-                <a href="#apropos" class="mobile-nav-link w-full text-center hover:text-sky-400">À propos</a>
-                <a href="#projets" class="mobile-nav-link w-full text-center hover:text-sky-400">Projets</a>
-                <a href="#competences" class="mobile-nav-link w-full text-center hover:text-sky-400">Compétences</a>
-                <a href="#experience" class="mobile-nav-link w-full text-center hover:text-sky-400">Expériences</a>
-                <a href="#contact" class="mobile-nav-link w-full text-center hover:text-sky-400">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <section id="accueil" class="w-full min-h-screen flex items-center justify-end px-6
-               bg-cover bg-center bg-no-repeat relative overflow-hidden"
-        style="background-image: url('images/im_info.jpg');">
-
-        <div class="absolute inset-0 bg-black/40"></div>
-
-        <div class="relative max-w-xl flex flex-col gap-6 text-right -translate-x-10">
-            <h1 class="text-4xl sm:text-5xl md:text-5xl font-bold leading-tight">
-                OVONO ETOUBEMBE
-                <span class="text-sky-400">Julfab Williarde</span><br />
-                <span class="text-slate-300 text-2xl sm:text-3xl">Data Analyst & Développeur IA</span>
-            </h1>
-
-            <p class="text-slate-300 text-lg">
-                Étudiant en Licence 2 MIASHS — Informatique à Toulouse Jean Jaurès, passionné par la data et l'IA,
-                avec un intérêt marqué pour Python, l'analyse de données et leurs applications concrètes.
-            </p>
-
-            <div class="flex flex-wrap gap-3 justify-end">
-                <a href="#projets"
-                    class="px-6 py-3 rounded-md bg-sky-500 hover:bg-sky-400 text-sm font-medium transition-colors">
-                    Voir mes projets
-                </a>
-                <a href="#contact"
-                    class="px-6 py-3 rounded-md border border-slate-700 hover:border-sky-400 text-sm font-medium transition-colors">
-                    Me contacter
-                </a>
+    <footer>
+        <div class="wrap">
+            <div class="footer-inner">
+                <p>© 2025 Julfab Williarde</p>
+                <p>L2 MIASHS · UT2J Toulouse</p>
             </div>
         </div>
-
-    </section>
-
-    <main class="max-w-5xl mx-auto px-4">
-
-        <section id="apropos"
-            class="min-h-screen py-16 flex items-center justify-center md:justify-between px-10 gap-12 flex-wrap">
-
-            <div class="max-w-xl mx-auto flex flex-col gap-6 items-center md:items-start text-justify reveal">
-                <h2 class="text-5xl font-bold text-sky-400">À propos</h2>
-                <p class="text-slate-300 text-lg">
-                    Actuellement en Licence 2 MIASHS, parcours Informatique à l'Université Toulouse Jean Jaurès, je
-                    développe mes compétences en analyse de données, programmation Python et intelligence artificielle.
-                    Passionné par la data et ses applications, je m'investis dans l'apprentissage du traitement de
-                    données, de la visualisation et des outils d'IA afin de construire des solutions fiables et utiles à
-                    la prise de décision.
-                </p>
-                <p class="text-slate-300 text-lg">
-                    J'ai déjà travaillé sur des projets utilisant
-                    <span class="text-sky-400">Python (FastAPI, Pandas)</span>,
-                    <span class="text-sky-400">SQL (MySQL, MariaDB, PostgreSQL)</span>
-                    et <span class="text-sky-400">R / RMarkdown</span>.
-                    Parallèlement, je développe mes compétences en
-                    <span class="text-sky-400">analyse de données</span> et en
-                    <span class="text-sky-400">intelligence artificielle</span>, deux domaines sur lesquels je
-                    souhaite particulièrement progresser. Mon objectif est de combiner développement Python et analyse
-                    de données pour contribuer à des projets concrets, en exploitant des outils comme <span class="text-sky-400">Power BI</span> et
-                    <span class="text-sky-400">Jupyter Notebook</span> pour transformer les données en insights utiles.
-                </p>
-            </div>
-
-            <div class="w-[280px] flex mx-auto justify-center reveal">
-                <img src="images/Développeur passionné entouré d'icônes Tech.png" alt="Avatar 3D Julfab"
-                    class="w-full h-auto object-contain">
-            </div>
-
-        </section>
-
-        <section id="projets" class="min-h-screen py-16 border-t border-slate-800">
-            <h2 class="text-5xl font-bold mb-10 text-sky-400">Projets</h2>
-
-            <div class="space-y-8">
-
-                <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/2 overflow-hidden rounded-md">
-                            <img src="images/Capture d'écran 2026-02-13 113141.png"
-                                class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                                alt="Projet FastAPI">
-                        </div>
-                        <div class="md:w-1/2">
-                            <h3 class="text-xl font-semibold mb-2">API REST en FastAPI</h3>
-                            <div class="description-content text-slate-300 text-base mt-3">
-                                <p class="mb-3">
-                                    API REST complète permettant de gérer un ensemble de Pokémon à partir d'un fichier
-                                    JSON.
-                                    Le projet repose sur une architecture structurée avec endpoints CRUD, filtrage
-                                    avancé
-                                    et validation stricte des données grâce à FastAPI et Pydantic.
-                                </p>
-
-                                <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
-                                    <li>Endpoints CRUD complets.</li>
-                                    <li>Filtrage avancé : types, évolution, statistiques, tri.</li>
-                                    <li>Validation des données avec Pydantic.</li>
-                                    <li>Gestion centralisée des erreurs.</li>
-                                    <li>Documentation automatique (Swagger UI / ReDoc).</li>
-                                </ul>
-                            </div>
-                            <button class="read-more-btn text-sky-400 hover:text-sky-300 text-sm mt-2 font-medium focus:outline-none">Lire la suite...</button>
-
-                            <div class="mt-4">
-                                <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
-                                    <span class="font-semibold text-slate-200">Technologies :</span>
-
-                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                        Python
-                                    </span>
-                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                        FastAPI
-                                    </span>
-                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                        JSON
-                                    </span>
-                                </p>
-
-                                <div class="flex gap-3 text-base">
-                                    <a href="https://github.com/julfab-williarde/API-Pokemon" target="_blank"
-                                        class="text-sky-400 hover:underline">Code source</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="group border border-slate-800 rounded-lg p-5 bg-slate-900/40 project-card hover:border-sky-400 hover:bg-slate-900/70 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/2 overflow-hidden rounded-md">
-                            <img src="images/Copilot_20260505_084250.png"
-                                class="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                                alt="Checklist App">
-                        </div>
-                        <div class="md:w-1/2">
-                            <h3 class="text-xl font-semibold mb-2">projet analyse qualité de l'air en Occitanie</h3>
-                            <div class="description-content text-slate-300 text-base mt-3">
-                                <p class="mb-3">
-                                    Ce projet s’inscrit dans une démarche de Data Engineering appliquée à l’étude
-                                    environnementale. Il consiste à intégrer, structurer et analyser des données
-                                    climatiques,
-                                    géographiques et atmosphériques relatives à la région Occitanie. Un pipeline ETL
-                                    permet
-                                    d’ingérer et de nettoyer des fichiers CSV hétérogènes avant leur intégration dans
-                                    une base
-                                    de données relationnelle SQLite, modélisée selon les principes de normalisation et
-                                    d’intégrité référentielle. Des requêtes SQL analytiques sont ensuite mobilisées
-                                    pour
-                                    produire des jeux de données répondant à plusieurs problématiques scientifiques,
-                                    notamment
-                                    l’étude des interactions entre conditions météorologiques, typologie territoriale
-                                    et
-                                    concentration en polluants (NO₂).
-                                </p>
-
-                                <ul class="list-disc list-inside space-y-1 text-slate-400 text-sm mb-3">
-                                    <li>Scripts ETL et automatisation.</li>
-                                    <li>Nettoyage, filtrage et préparation des données.</li>
-                                    <li>Modélisation relationnelle et stockage structuré.</li>
-                                    <li>Jointures, agrégations et extraction analytique.</li>
-                                    <li>Sources brutes et datasets produits.</li>
-                                </ul>
-                            </div>
-                            <button class="read-more-btn text-sky-400 hover:text-sky-300 text-sm mt-2 font-medium focus:outline-none">Lire la suite...</button>
-
-                            <div class="mt-4">
-                                <p class="text-sm text-slate-400 mb-3 flex items-center gap-2 flex-wrap">
-                                    <span class="font-semibold text-slate-200">Technologies :</span>
-
-                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                        Python 3
-                                    </span>
-                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                        Pandas
-                                    </span>
-                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                        SQLite
-                                    </span>
-                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                        SQL
-                                    </span>
-                                    <span class="px-2 py-1 bg-slate-800 text-sky-400 font-semibold rounded-lg">
-                                        CSV
-                                    </span>
-                                </p>
-
-                                <div class="flex gap-3 text-base">
-                                    <a href="https://github.com/julfab-williarde/projet-analyse-qualit-de-l-air-en-Occitanie" target="_blank"
-                                        class="text-sky-400 hover:underline">Code source</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="competences" class="min-h-screen py-16 border-t border-slate-800">
-            <h2 class="text-6xl font-bold mb-10 text-sky-400">Compétences</h2>
-
-            <div class="grid md:grid-cols-3 gap-6 text-lg">
-
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-5"
-                            alt="Icone Backend" />
-                        Langages & Analyse
-                    </h3>
-                    <ul class="space-y-1">
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/python.png" class="w-4" />
-                            Python (FastAPI, Pandas)
-                        </li>
-
-                        <li class="flex items-center gap-2 px-2 py-1 bg-slate-800 text-slate-100 rounded-2xl">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" class="w-4" />
-                            SQL avancé (MySQL, MariaDB,PostgreSQL)
-                        </li>
-                    </ul>
-                </div>
-
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 ease-out hover:border-sky-400 hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" class="w-5"
-                            alt="Icone Frontend" />
-                        Développement web
-                    </h3>
-                    <ul class="space-y-1 text-slate-300">
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" class="w-4 h-4"
-                                alt="HTML5 icon" />
-                            HTML5
-                        </li>
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="w-4 h-4"
-                                alt="CSS3 icon" />
-                            CSS3 (TailwindCSS)
-                        </li>
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="w-4 h-4"
-                                alt="JavaScript icon" />
-                            JavaScript (React)
-                        </li>
-                        <li
-                            class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl">
-                            <img src="images/java.png" class="w-4" />
-                            Java
-                        </li>
-                        <li
-                            class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" class="w-4" />
-                            PHP
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" class="w-5"
-                            alt="Icone Frameworks" />
-                        Visualisation & Reporting
-                    </h3>
-                    <ul class="space-y-1 text-slate-300">
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/imgbin_50e4827b30e15c3072506adb76421d26.png" class="w-4 h-4" />
-                            Power BI
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/xls.png" class="w-4 h-4" />
-                            Excel
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/icons8-jupyter-96.png" class="w-4 h-4" />
-                            Jupyter Notebook
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 hover:border-sky-400 ease-out hover:scale-105 transition-transform duration-300 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" class="w-5"
-                            alt="Icone Outils" />
-                        Outils
-                    </h3>
-                    <ul class="space-y-1 text-slate-300">
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                                class="w-4 h-4" alt="Git icon" />
-                            Git / GitHub
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                                class="w-4 h-4" alt="VS Code icon" />
-                            Visual Studio Code
-                        </li>
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/icons8-rstudio-64.png" class="w-4 h-4" />
-                            R/RStudio
-                        </li>
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/office.png" class="w-4 h-4" />
-                            Microsoft 365 / Office 365 (notions)
-                        </li>
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                                class="w-4 h-4" alt="Figma icon" />
-                            Figma
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-5"
-                            alt="Icone Transversal" />
-                        Compétences transversales
-                    </h3>
-                    <ul class="space-y-1 text-slate-300">
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1041/1041373.png" class="w-4 h-4"
-                                alt="Travail en équipe icon" />
-                            Travail en équipe
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/agile-methodology.png" class="w-4 h-4"
-                                alt="Intérêt pour les méthodes Agile" />
-                            Intérêt pour les méthodes Agile
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/business-chart.png" class="w-4 h-4" alt="Organisation autonomie icon" />
-                            Organisation & autonomie
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/adaptation.png" class="w-4 h-4" alt="Adaptabilité icon" />
-                            Adaptabilité
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/creative-process.png" class="w-4 h-4" alt="Créativité icon" />
-                            Créativité
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <h3 class="font-semibold mb-3 text-sky-400  flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1975/1975643.png" class="w-5"
-                            alt="Icone Langues" />
-                        Langues
-                    </h3>
-                    <ul class="space-y-1 text-slate-300">
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" class="w-4 h-4"
-                                alt="Français icon" />
-                            Français : langue maternelle
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" class="w-4 h-4"
-                                alt="Anglais icon" />
-                            Anglais : B1
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="https://cdn-icons-png.flaticon.com/512/197/197375.png" class="w-4 h-4"
-                                alt="Mandarin icon" />
-                            Mandarin : débutant
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div
-                    class="border border-slate-800 rounded-lg p-5 bg-slate-900/40 transition-transform ease-out duration-300 hover:scale-105 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <h3 class="font-semibold mb-3 text-sky-400 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="w-5"
-                            alt="Icone Loisirs" />
-                        Centres d'intérêt
-                    </h3>
-                    <ul class="space-y-1 text-slate-300">
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/soccer-ball-variant.png" class="w-4 h-4" alt="Football icon" />
-                            Sports collectifs
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/mountaineer.png" class="w-4 h-4" alt="Randonnée montagne icon" />
-                            Randonnée en montagne
-                        </li>
-
-                        <li class="flex items-center gap-2 px-3 py-1 bg-slate-800 border border-slate-700 rounded-2xl">
-                            <img src="images/pallete.png" class="w-4 h-4" alt="Palette peinture icon" />
-                            Culture et loisirs artistiques
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="experience" class="min-h-screen py-16 border-t border-slate-800">
-            <h2 class="text-5xl font-bold mb-10 text-sky-400">Expériences</h2>
-
-            <div class="space-y-10">
-
-                <!-- Workshop -->
-                <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <div class="flex items-center gap-3 mb-3">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-8" />
-                        <h3 class="text-xl font-semibold text-sky-400">
-                            Workshop - Communication visuelle & Maquette web
-                        </h3>
-                    </div>
-
-                    <p class="text-sm text-slate-400 mb-3">
-                        Institut Supérieur de Management de Dakar · Collaboration entreprise · 1 semaine
-                    </p>
-
-                    <p class="text-slate-300 mb-4">
-                        Participation à un workshop intensif visant à répondre à une problématique réelle d'entreprise :
-                        création d'une identité visuelle, d'une maquette web et d'une vidéo de présentation.
-                    </p>
-
-                    <p class="text-slate-300 font-semibold mb-2 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="w-4" />
-                        Mes contributions :
-                    </p>
-
-                    <ul class="list-disc list-inside text-slate-300 space-y-1">
-                        <li>Création de l'affiche promotionnelle</li>
-                        <li>Refonte du logo & harmonisation visuelle</li>
-                        <li>Montage de la vidéo finale</li>
-                        <li>Participation à la maquette web</li>
-                        <li>Travail en équipe pluridisciplinaire</li>
-                    </ul>
-
-                    <p class="text-slate-300 font-semibold mt-4 flex items-center gap-2">
-                        <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" class="w-4" />
-                        Compétences mobilisées :
-                    </p>
-
-                    <p class="text-slate-300">
-                        Communication visuelle, design graphique, créativité, gestion de projet courte durée,
-                        travail en équipe, adaptation aux besoins d'un client.
-                    </p>
-                </div>
-
-                <!-- Employé Logistique -->
-                <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <div class="flex items-center gap-3 mb-3">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" class="w-8" />
-                        <h3 class="text-xl font-semibold text-sky-400">
-                            Employé Logistique - Emploi étudiant | RentréeDiscount
-                        </h3>
-                    </div>
-
-                    <p class="text-sm text-slate-400 mb-3">
-                        Été 2024 · Toulouse
-                    </p>
-
-                    <ul class="list-disc list-inside text-slate-300 space-y-1">
-                        <li>Préparation des commandes avec précision</li>
-                        <li>Organisation et rangement des zones de stockage</li>
-                        <li>Maintien de la propreté de l'entrepôt</li>
-                        <li>Contrôle qualité des produits avant expédition</li>
-                    </ul>
-                </div>
-
-                <!-- Engagement associatif -->
-                <div
-                    class="border border-slate-800 rounded-lg p-6 bg-slate-900/40 hover:border-sky-400 hover:scale-105 transition duration-300 ease-out hover:shadow-xl hover:shadow-sky-500/10 reveal">
-                    <div class="flex items-center gap-3 mb-3">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" class="w-8" />
-                        <h3 class="text-xl font-semibold text-sky-400">
-                            Engagement associatif - Association des étudiants étrangers
-                        </h3>
-                    </div>
-
-                    <p class="text-sm text-slate-400 mb-3">
-                        2022 - 2024 · Dakar (Sénégal)
-                    </p>
-
-                    <ul class="list-disc list-inside text-slate-300 space-y-1">
-                        <li>Préparation et mise en place d'événements</li>
-                        <li>Coordination logistique</li>
-                        <li>Gestion du matériel et soutien aux activités</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="contact"
-            class="text-center min-h-screen py-16 border-t border-slate-800 flex flex-col justify-center">
-            <h2 class="text-5xl font-bold mb-10 text-sky-400">Contact</h2>
-
-            <p class="text-slate-300 mb-6 text-lg">
-                Disponible pour une alternance en Data Analyst & Développement IA à partir de 2026-2027.
-            </p>
-
-            <div class="space-y-4 text-lg mx-auto flex flex-col items-center text-center reveal">
-
-                <p class="flex items-center gap-3">
-                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-6" />
-                    <span class="font-semibold text-slate-100">Email :</span>
-                    <a href="mailto:christwilliarde@gmail.com" class="text-sky-400 hover:underline">
-                        christwilliarde@gmail.com
-                    </a>
-                </p>
-
-                <p class="flex items-center gap-3">
-                    <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="w-6" />
-                    <span class="font-semibold text-slate-100">Téléphone :</span>
-                    +33 7 61 53 02 52
-                </p>
-
-                <p class="flex items-center gap-3">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="w-6" />
-                    <span class="font-semibold text-slate-100">GitHub :</span>
-                    <a href="https://github.com/julfab-williarde" target="_blank" class="text-sky-400 hover:underline">
-                        github-Julfab
-                    </a>
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500 mt-8">
-        © 2026 - OVONO ETOUBEMBE Julfab Williarde · Portfolio Data Analyst & Développeur IA
     </footer>
 
 </body>
